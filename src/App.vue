@@ -12,6 +12,7 @@
     href="https://github.com/Jinwa"
     target="__blank"
     class="fab"
+    elevation="1"
   >
     <v-icon>mdi-github</v-icon>
   </v-btn>
