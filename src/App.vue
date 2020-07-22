@@ -1,14 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="app"
+  >
+
+   <v-btn
+    fixed
+    dark
+    fab
+    top
+    right
+    color="#26ACC9"
+    href="https://github.com/Jinwa"
+    target="__blank"
+    class="fab"
+  >
+    <v-icon>mdi-github</v-icon>
+  </v-btn>
+    <v-main>
+      <v-container
+        class="fill-height"
+        fluid
+      >
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col class="text-center">
+
+            <router-view/>
+                    
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,4 +53,9 @@
     }
   }
 }
+
+#toolbar-title {
+  font-family: 'Sarina';
+}
+
 </style>
