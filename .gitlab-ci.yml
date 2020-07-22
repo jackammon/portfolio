@@ -6,5 +6,5 @@ pages: # the job must be named pages
     - npm run build
     - mv public public-vue # GitLab Pages hooks on the public folder
     artifacts:
-    paths:
-      - public
+      paths:
+        - public
