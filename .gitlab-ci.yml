@@ -5,4 +5,4 @@ pages: # the job must be named pages
     - npm ci
     - npm run build
     - mv public public-vue # GitLab Pages hooks on the public folder
-    - mv staging public # rename the staging folder (result of npm run build)
+    - mv master public # rename the staging folder (result of npm run build)
