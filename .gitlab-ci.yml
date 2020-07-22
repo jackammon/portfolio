@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  image: node:latest
+  script:
+    - npm ci
+    - npm run build
+    - mv public public-vue
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
