@@ -5,6 +5,7 @@ pages:
     - npm ci
     - npm run build
     - mv public public-vue
+    - mv dist/* public
   artifacts:
     paths:
       - public
