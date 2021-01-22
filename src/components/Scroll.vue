@@ -1,85 +1,130 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="3"> </v-col>
-      <v-col cols="5">
+    <div>
+    <section> 
+      <div class="effect-wrapper">
         <div class="effect">
-          <div class="title">
-              <div class="title-word">Hello</div>
-              <div class="title-word">I'm</div>
-              <div class="title-word">Jack</div>
+          <div class="head">
+              <div class="head-word">Hello</div>
+              <div class="head-word">I'm</div>
+              <div class="head-word">Jack</div>
           </div>
         </div>
-      </v-col>
-      <v-col cols="3"> </v-col>
-    </v-row>
-  </v-container>
+      </div>
+    </section>
+
+     <section id="s1" style="background-color: red;">
+         <h1 id="c1" style="color: white;"> Projects </h1>
+         
+     </section>
+
+     <section id="s2" style="background-color: blue;">
+         <h1 id="c2" style="color: white;"> Project A </h1>
+     </section>
+
+     <section id="s3" style="background-color: green;">
+         <h1 id="c3" style="color: white;"> Project B  </h1>
+     </section>
+  </div>
 </template>
 
+
 <script>
-  export default {
-    name: 'Title',
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js'
+// Force CSSPlugin to not get dropped during build
+gsap.registerPlugin(ScrollTrigger);
 
+export default {
+  mounted() {
+    this.scrollAnimation();
+  },
+  methods: {
+    scrollAnimation() {
+    gsap.to('#s1', {
+        scrollTrigger: {
+            trigger: "#s1",
+            start: "top center", 
+            end: "+=300",
+            pin: "#c1"
+        }
+        });
+        
+
+    gsap.to('#s2', {
+        scrollTrigger: {
+            trigger: "#s2",
+            start: "top center", 
+            end: "+=300", // 200px past the start 
+            pin: "#c2"
+        }
+        });
+
+    gsap.to('#s3', {
+        scrollTrigger: {
+            trigger: "#s3",
+            start: "top center", 
+            end: "+=300", // 200px past the start 
+            pin: "#c3"
+        }
+        });
+        
+    },
   }
-
+};
 </script>
 
-<style scoped>
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #262626;
+<style>
+section {
+    height: 100vh;
+    font-family: 'Rubik' !important;
+    font-size: 20pt !important;
 }
-.title {
-  position: fixed;
+
+.head {
+  /* position: fixed; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   perspective: 400;
   padding-left: 17px;
   font-family: 'Rubik' !important;
   font-weight: 900 !important;
-  font-size: 42pt !important;
+  font-size: 40pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
 }
-.title:before {
+.head:before {
   content: '';
   display: block;
   position: absolute;
   height: 100%;
   width: 6px;
-  background: white;
+  background: #26ACC9;
   top: 0;
   left: -42px;
   opacity: 0;
   transform: translateX(-150px);
-  animation: title-border-slide-in 0.35s ease-out forwards;
+  animation: head-border-slide-in 0.35s ease-out forwards;
 }
-
-.effect:hover .title { color: white; }
-
-.title .title-word {
+.head .head-word {
   opacity: 0;
   transform-origin: bottom center;
   transform: rotateX(-90deg);
 }
-.title .title-word:nth-child(1) {
+.head .head-word:nth-child(1) {
   animation: roll-in 0.15s 0s ease-out forwards;
 }
-.title .title-word:nth-child(2) {
+.head .head-word:nth-child(2) {
   animation: roll-in 0.15s 0.175s ease-out forwards;
 }
-.title .title-word:nth-child(3) {
+.head .head-word:nth-child(3) {
   animation: roll-in 0.15s 0.35s ease-out forwards;
 }
-.title .title-word:nth-child(4) {
+.head .head-word:nth-child(4) {
   animation: roll-in 0.15s 0.525s ease-out forwards;
 }
-@-moz-keyframes title-border-slide-in {
+@-moz-keyframes head-border-slide-in {
   0% {
     transform: translateX(-150px);
     opacity: 0;
@@ -89,7 +134,7 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes title-border-slide-in {
+@-webkit-keyframes head-border-slide-in {
   0% {
     transform: translateX(-150px);
     opacity: 0;
@@ -99,7 +144,7 @@ body {
     opacity: 1;
   }
 }
-@-o-keyframes title-border-slide-in {
+@-o-keyframes head-border-slide-in {
   0% {
     transform: translateX(-150px);
     opacity: 0;
@@ -109,7 +154,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes title-border-slide-in {
+@keyframes head-border-slide-in {
   0% {
     transform: translateX(-150px);
     opacity: 0;
@@ -160,12 +205,18 @@ body {
   }
 }
 
-.effect {
-
-  position: fixed;
-  top: 50%;
+.effect-wrapper {
+  position: relative;
+  top: 45vh;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.effect {
+  /* position: fixed; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0%, 0%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +226,6 @@ body {
   background: white;
   border-radius: 75px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
   font-weight: lighter;
   letter-spacing: 2px;
   transition: 1s box-shadow;
@@ -191,14 +241,14 @@ div.effect:hover:before, div.effect:hover:after {
   position: absolute;
   width: 350px;
   height: 350px;
-  background: #0197F6;
+  background: #FDA8CF;
   border-radius: 75px;
   z-index: -1;
   animation: 1s clockwise infinite;
 }
 
 div.effect:hover:after {
-  background: #00db96;
+  background: #F3CE5E;
   animation: 2s counterclockwise infinite;
 }
 
@@ -279,5 +329,4 @@ div.effect:hover:after {
     right: 0;    
   }
 }
-
 </style>

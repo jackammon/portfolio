@@ -1,15 +1,57 @@
 <template>
   <v-app id="app"
   >
+  <v-app-bar
+  absolute
+  flat
+  color="white"> 
 
+    <v-btn
+    text
+    large
+    class="btn-size"
+    color="black"
+    to="/"
+    >
+      Jack Ammon
+    </v-btn>
+
+      <v-btn
+      color="black"
+      large
+      text
+      class="btn-size"
+      to="resume">
+        Resume
+      </v-btn>
+
+      <v-btn
+      color="black"
+      large
+      text
+      class="btn-size"
+      to="projects">
+        Projects
+      </v-btn>
+
+      <v-btn 
+    text
+    large
+    class="btn-size"
+    color="black"
+    to="/contact">
+        Contact
+      </v-btn>
+
+  </v-app-bar>
    <v-btn
     fixed
     dark
     fab
-    top
+    bottom
     right
-    color="#26ACC9"
-    href="https://github.com/Jinwa"
+    color="black"
+    href="https://github.com/jackammon"
     target="__blank"
     class="fab"
     elevation="1"
@@ -20,6 +62,7 @@
       <v-container
         class="fill-height"
         fluid
+        style="padding-top: 56px;"
       >
         <v-row
           align="center"
@@ -38,11 +81,11 @@
 
 <style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Rubik';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 #nav {
   padding: 30px;
@@ -57,6 +100,11 @@
 
 #toolbar-title {
   font-family: 'Sarina';
+}
+
+.btn-size {
+  font-size: 16pt !important;
+  font-weight: 700 !important;
 }
 
 </style>
