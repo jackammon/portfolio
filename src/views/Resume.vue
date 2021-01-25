@@ -21,7 +21,7 @@
                     <v-row class="text"> - Frontend: Javascript, Vue.JS, HTML, CSS </v-row>     
                     <v-row class="text"> - Backend: Java, C/C++, C#, Python, SQL </v-row>
                     <v-row class="text"> - Git </v-row>
-                    <v-row class="text"> - Frontend: OO & Functional programming </v-row>
+                    <v-row class="text"> - OO & Functional programming </v-row>
                     
                     <v-row class="sub-titles" style="padding-top: 8px;"> Soft </v-row>
                     <v-row class="text"> - Writing and Speaking </v-row>
@@ -50,7 +50,7 @@
 
                 <!-- right side -->
                 <v-col>
-                    <v-row class="section-header"> Expierence </v-row>
+                    <v-row class="section-header"> Experience </v-row>
                     <v-row class="titles" style="margin-top: -8px !important;"> Freelance Web Developer </v-row>
                     <v-row class="text2"> @ Kingdom Web Development LLC </v-row>
 
@@ -60,7 +60,7 @@
 
                     <v-row class="p-title" style="padding-top: 16px !important;"> Access Solutions </v-row>
                     <v-row class="dates"> Fall 2020-Spring 2021 </v-row>
-                    <v-row class="text"> I led a team for my senior design project to develop a comprehensive scheduling system for Access Solutions, who specialize in forigen material exclusion. I was responsible for ensuring different phases of design and development progressed and integrated smoothly together.  I gained experience giving presentations to my advisors and our client, while also leading weekly design meetings with my team and delegated tasks based on each member's strengths. </v-row>
+                    <v-row class="text"> I led a team for my senior design project to develop a comprehensive scheduling system for Access Solutions, who specialize in foreign material exclusion. I was responsible for ensuring different phases of design and development progressed and integrated smoothly together.  I gained experience giving presentations to my advisors and our client, while also leading weekly design meetings with my team and delegated tasks based on each member's strengths. </v-row>
 
                 </v-col>
             </v-row>
