@@ -20,19 +20,19 @@
 
                     <v-row class="text"> - Frontend: Javascript, Vue.JS, HTML, CSS </v-row>     
                     <v-row class="text"> - Backend: Java, C/C++, C#, Python, SQL </v-row>
-                    <v-row class="text"> - Git </v-row>
+                    <v-row class="text"> - Git, Docker, Unix </v-row>
                     <v-row class="text"> - OO & Functional programming </v-row>
                     
                     <v-row class="sub-titles" style="padding-top: 8px;"> Soft </v-row>
                     <v-row class="text"> - Writing and Speaking </v-row>
                     <v-row class="text"> - Team-Building </v-row>
                     <v-row class="text"> - Coordinating and delegating tasks </v-row>
-                    <v-row class="text"> - Confidence in decision making </v-row>
+                    <v-row class="text"> - Decision making </v-row>
 
                     <v-row class="section-header" style="padding-top: 16px;"> Education </v-row>
                     <v-row class="titles" style="margin-top: -4px !important;"> George Fox University </v-row>
                     <v-row class="text1" style="margin-top: -4px !important;"> Newberg, Oregon </v-row>
-                    <v-row class="text2"> B.S. Computer Science April 2021 </v-row>
+                    <v-row class="text2"> B.S. Computer Science, April 2021 </v-row>
 
                     <v-row class="p-title" style="padding-top: 16px;"> Relevant Courses </v-row>
                     <v-row class="i-text"> - Data Structures </v-row>
@@ -51,16 +51,30 @@
                 <!-- right side -->
                 <v-col>
                     <v-row class="section-header"> Experience </v-row>
-                    <v-row class="titles" style="margin-top: -8px !important;"> Freelance Web Developer </v-row>
-                    <v-row class="text2"> @ Kingdom Web Development LLC </v-row>
+                    <v-row class="titles" > Freelance Web Developer </v-row>
+                    <v-row class="text2" style="margin-top: -4px !important;"> @ Kingdom Web Development LLC </v-row>
+                    <v-row class="text3"> May 2019-December 2020 </v-row>
+
+                    <v-row class="titles" style="padding-top: 8px !important;"> Technical Manager </v-row>
+                    <v-row class="text2" style="margin-top: -4px !important;"> @ Servant Engineering & Senior Design Projects for George Fox University </v-row>
+                    <v-row class="text3"> Fall 2019-Spring 2021 </v-row>
 
                     <v-row class="p-title" style="padding-top: 16px !important;"> UP Movement </v-row>
                     <v-row class="dates"> Fall 2019-Fall 2020 </v-row>
-                    <v-row class="text"> I led a team for my servant engineering project in conjunction with Pivot Group to design and build a website for the UP Movement non-profit, which seeks to end human trafficking. We built the website in Vue.JS and the backend with C# and ASP .NET. I communicated project requirements and design ideas with the client, worked directly with a design team in an iterative development process, and integrated Stripe.JS to handle donations. Once the academic year ended I was hired to finish the project. </v-row>
+                    <v-row class="text"> - Led a team of four building a full-stack web app from scratch </v-row>
+                    <v-row class="text"> - Built the frontend in Vue.JS and the backend with C# and Docker. </v-row>
+                    <v-row class="text"> - Communicated project requirements and design ideas with the client. </v-row>
+                    <v-row class="text"> - Worked directly with a creative agency in an iterative development process. </v-row>
+                    <v-row class="text"> - Integrated Stripe.JS to handle donations. </v-row>
+
 
                     <v-row class="p-title" style="padding-top: 16px !important;"> Access Solutions </v-row>
                     <v-row class="dates"> Fall 2020-Spring 2021 </v-row>
-                    <v-row class="text"> I led a team for my senior design project to develop a comprehensive scheduling system for Access Solutions, who specialize in foreign material exclusion. I was responsible for ensuring different phases of design and development progressed and integrated smoothly together.  I gained experience giving presentations to my advisors and our client, while also leading weekly design meetings with my team and delegated tasks based on each member's strengths. </v-row>
+                    <v-row class="text"> - Led a team of six to design and build a comprehensive scheduling system. </v-row>
+                    <v-row class="text"> - Ensured different phases of design and development progressed and integrated smoothly together.  </v-row>
+                    <v-row class="text"> - Led weekly sprint meetings. </v-row>
+                    <v-row class="text"> - Gave presentations to my advisors and clients. </v-row>
+                    <v-row class="text"> - Built the frontend in Vue.JS and the backend with MySQL and Django in a Docker container.  </v-row>
 
                 </v-col>
             </v-row>
@@ -136,6 +150,12 @@
     .text2 {
         font-size: 16pt !important;
         font-weight: 400 !important;
+    }
+
+    .text3 {
+        font-size: 14pt !important;
+        font-weight: 400 !important;
+        font-style: italic;
     }
 
     .p-fix {

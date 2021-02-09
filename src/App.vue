@@ -79,6 +79,17 @@
   </v-app>
 </template>
 
+<script>
+export default {
+  mounted() {
+    console.log("hi there 👋");
+    console.log("I built this website using Vue.JS");
+    console.log("If you'd like to get in contact with me my information is on under the contact tab");
+    console.log("Have a blessed day!");
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 #app {
   font-family: 'Rubik';
