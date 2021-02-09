@@ -6,7 +6,7 @@ import vuetify from './plugins/vuetify'
 import VueAnalytics from 'vue-analytics'
 
 Vue.use(VueAnalytics, {
-  id: 'G-T5GW032EY1',
+  id: 'UA-189403119-1',
   router
 })
 
