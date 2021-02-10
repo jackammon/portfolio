@@ -84,7 +84,7 @@ export default {
   mounted() {
     console.log("hi there 👋");
     console.log("I built this website using Vue.JS");
-    console.log("If you'd like to get in contact with me my information is on under the contact tab");
+    console.log("If you'd like to get in contact with me my information is found under the contact page");
     console.log("Have a blessed day!");
   }
 }
