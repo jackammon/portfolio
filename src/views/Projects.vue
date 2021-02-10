@@ -43,7 +43,7 @@
         hide-delimiter-background
         hide-delimiters
         show-arrows-on-hover
-        style="height: 100% !important;"
+        height="auto"
         >
           <v-carousel-item
             v-for="(item,i) in items"
@@ -52,6 +52,8 @@
             :src="item.src"
             reverse-transition="fade-transition"
             transition="fade-transition"
+            position
+            style="width: 100%;"
           ></v-carousel-item>
         </v-carousel>
       </v-col>
