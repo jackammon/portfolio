@@ -43,6 +43,7 @@
         hide-delimiter-background
         hide-delimiters
         show-arrows-on-hover
+        style="height: 100%; width: auto;"
         :cycle="true"
         >
           <v-carousel-item
