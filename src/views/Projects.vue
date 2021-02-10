@@ -43,7 +43,7 @@
         hide-delimiter-background
         hide-delimiters
         show-arrows-on-hover
-        style="height: 100% !important;"
+        style="height: 100%;"
         >
           <v-carousel-item
             v-for="(item,i) in items"
