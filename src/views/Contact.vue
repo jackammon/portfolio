@@ -6,7 +6,7 @@
         <div class="effect">
           <div class="title">
               <div class="title-word">You can reach me at </div>
-              <div class="title-word">jammon17@georgefox.edu </div>
+              <div class="title-word">jcarunner@gmail.edu </div>
               <div class="title-word"> 509.808.1219</div>
           </div>
         </div>
