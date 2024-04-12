@@ -17,7 +17,7 @@
 
                     <v-row class="section-header" style="padding-top: 16px;"> Skills </v-row>
                     <v-row class="titles"> Hard </v-row>
-
+                        
                     <v-row class="text"> - Frontend: TypeScript, Vue.JS, Angular </v-row>     
                     <v-row class="text"> - Backend: NET, Node.js, Laravel </v-row>
                     <v-row class="text"> - Git, Docker, Unix </v-row>
@@ -63,7 +63,7 @@
                         </ul>
                     </v-row>
 
-                    <v-row>
+                    <v-row style="margin-bottom: 8px">
                         <b>70% - Engineering</b>
                         <ul>
                             <li>Wrote performant front-end components in Vue and Angular.</li>
@@ -76,7 +76,7 @@
 
                     <v-row class="titles"> Software Engineer </v-row>
                     <v-row class="text3"> July 2021 - June 2022 @ Buildable</v-row>
-                    <v-row>
+                    <v-row style="margin-bottom: 8px">
                         <ul>
                             <li>Successfully developed and launched a custom ERP system with 4 apps and a central server.</li>
                             <li>Rebuilt client trust and relationship, identifying true remaining project scope and seeing a 6-year-old project to completion and successful launch.<br></li>
@@ -88,37 +88,45 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="titles" > Freelance Software Developer </v-row>
-                    <v-row class="text3"> May 2019-December 2020 @ Kingdom Web Development LLC </v-row>
-                    <ul>
-                        <li>Wrote performant front-end components in Vue.</li>
-                        <li>Wrote performant NodeJS backends.</li>
-                        <li>Integrated Stripe into ecommerce sites.</li>
-                        <li>Worked directly with clients and designers on implementing and iterating on features.</li>
-                    </ul>
+                    <v-row class="titles"> Freelance Software Developer </v-row>
+                    <v-row class="text3">May 2019 - December 2020 @ Kingdom Web Development LLC</v-row>
+                    <v-row style="margin-bottom: 16px">
+                        <ul>
+                            <li>Wrote performant front-end components in Vue.</li>
+                            <li>Wrote performant NodeJS backends.</li>
+                            <li>Integrated Stripe into ecommerce sites.</li>
+                            <li>Worked directly with clients and designers on implementing and iterating on features.</li>
+                        </ul>
+                    </v-row>
 
-                    <v-row class="titles" style="padding-top: 8px !important;"> Technical Manager </v-row>
-                    <v-row class="text2" style="margin-top: -4px !important;"> @ Servant Engineering & Senior Design Projects for George Fox University </v-row>
-                    <v-row class="text3"> Fall 2019-Spring 2021 </v-row>
+                    <v-row class="titles"> Technical Manager </v-row>
+                    <v-row class="text3">Fall 2019 - Spring 2021 @ Servant Engineering & Senior Design Projects for George Fox University</v-row>
+      
+                    <v-row class="p-title"> UP Movement </v-row>
+                    <v-row class="text3"> Fall 2019-Fall 2020 </v-row>
+                    <v-row style="margin-top: 0px !important">
+                        <ul>
+                            <li>Led a team of four building a full-stack web app from scratch</li>
+                            <li>Built the frontend in Vue.JS and the backend with C# and Docker.</li>
+                            <li>Communicated project requirements and design ideas with the client.</li>
+                            <li>Worked directly with a creative agency in an iterative development process.</li>
+                            <li>Integrated Stripe.JS to handle donations.</li>
+                        </ul>
+                    </v-row>
 
-                    <v-row class="p-title" style="padding-top: 16px !important;"> UP Movement </v-row>
-                    <v-row class="dates"> Fall 2019-Fall 2020 </v-row>
-                    <ul>
-                        <li>Led a team of four building a full-stack web app from scratch</li>
-                        <li>Built the frontend in Vue.JS and the backend with C# and Docker.</li>
-                        <li>Communicated project requirements and design ideas with the client.</li>
-                        <li>Worked directly with a creative agency in an iterative development process.</li>
-                        <li>Integrated Stripe.JS to handle donations.</li>
-                    </ul>
-                    <v-row class="p-title" style="padding-top: 16px !important;"> Access Solutions </v-row>
-                    <v-row class="dates"> Fall 2020-Spring 2021 </v-row>
-                    <ul>
-                        <li>Led a team of six to design and build a comprehensive scheduling system.</li>
-                        <li>Ensured different phases of design and development progressed and integrated smoothly together.</li>
-                        <li>Led weekly sprint meetings.</li>
-                        <li>Gave presentations to my advisors and clients.</li>
-                        <li>Built the frontend in Vue.JS and the backend with MySQL and Django in a Docker container.</li>
-                    </ul>
+
+                    <v-row class="p-title"> Access Solutions </v-row>
+                    <v-row class="text3"> Fall 2020-Spring 2021</v-row>
+                    <v-row style="margin-top: 0px !important">
+                        <ul>
+                            <li>Led a team of six to design and build a comprehensive scheduling system.</li>
+                            <li>Ensured different phases of design and development progressed and integrated smoothly together.</li>
+                            <li>Led weekly sprint meetings.</li>
+                            <li>Gave presentations to my advisors and clients.</li>
+                            <li>Built the frontend in Vue.JS and the backend with MySQL and Django in a Docker container.</li>
+                        </ul>
+                    </v-row>
+
                 </v-col>
             </v-row>
       </v-container>
@@ -205,6 +213,7 @@
         font-size: 12pt !important;
         font-weight: 400 !important;
         margin-top: 6px;
+        margin-bottom: 8px;
     }
 
     .p-fix {
@@ -216,6 +225,18 @@
     .dates {
         font-size: 12pt !important;
         font-weight: 800 !important;
+    }
+
+    ul {
+        list-style-type:disc;
+        /* margin: 0; */
+        /* padding: 0; */
+    }
+
+    li {
+        font-size: 11pt !important;
+        line-height: 14pt;
+        padding-bottom: 8px;
     }
 
 </style>
