@@ -41,7 +41,7 @@ body {
   padding-left: 17px;
   font-family: 'Rubik' !important;
   font-weight: 900 !important;
-  font-size: 42pt !important;
+  font-size: 36pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
