@@ -22,11 +22,6 @@
         <v-row class="sub-title"> 
           Technology
       </v-row>
-      <v-row> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" class="logos" /> 
-        <img src="https://static.gunnarpeipman.com/wp-content/uploads/2020/09/aspnet-featured.png" class="logos" />
-        <img src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" class="logos" />   
-      </v-row>
       </v-col>
     </v-row>
 
@@ -71,36 +66,27 @@
         <v-row class="sub-title"> 
           Technology
       </v-row>
-      <v-row style="padding-bottom: 16px;"> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" class="logos" /> 
-        <img src="https://static.djangoproject.com/img/logos/django-logo-positive.png" class="logos" />
-        <img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" class="logos" />
-        <img src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" class="logos" />   
+      <v-row style="padding-bottom: 16px;">
       </v-row>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        items: [
-          {
-            src: require('../assets/as1.png'),
-          },
-          {
-            src: require('../assets/as2.png'),
-          },
-          {
-            src: require('../assets/as3.png'),
-          }
-        ],
-      }
-    },
-  }
+<script setup>
+import as1 from '../assets/as1.png';
+import as2 from '../assets/as2.png';
+import as3 from '../assets/as3.png';
+
+import { ref } from 'vue';
+
+const items = ref([
+  { src: as1 },
+  { src: as2 },
+  { src: as3 }
+]);
 </script>
+
 
 <style scoped>
 
