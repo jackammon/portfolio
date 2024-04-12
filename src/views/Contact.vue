@@ -6,8 +6,8 @@
         <div class="effect">
           <div class="title">
               <div class="title-word">You can reach me at </div>
-              <div class="title-word">jcarunner@gmail.edu </div>
-              <div class="title-word"> 509.808.1219</div>
+              <div class="title-word">&#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</div>
+              <div class="title-word">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</div>
           </div>
         </div>
       </v-col>
@@ -33,7 +33,7 @@ body {
   padding-left: 17px;
   font-family: 'Rubik' !important;
   font-weight: 900 !important;
-  font-size: 42pt !important;
+  font-size: 32pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
