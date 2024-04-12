@@ -45,6 +45,7 @@ body {
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
+  letter-spacing: .0125em !important;
 }
 /* .title:before {
   content: '';

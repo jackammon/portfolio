@@ -1,20 +1,18 @@
-import Vue from 'vue'
+/**
+ * main.js
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
+
+// Plugins
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
 import vuetify from './plugins/vuetify'
-import VueAnalytics from 'vue-analytics'
 
-Vue.use(VueAnalytics, {
-  id: 'UA-189403119-1',
-  router
-})
+const app = createApp(App)
 
-Vue.config.productionTip = false
+app.use(router)
+app.use(vuetify)
 
-new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
-}).$mount('#app')
+app.mount('#app')

@@ -220,11 +220,11 @@
         /* margin: 0; */
         /* padding: 0; */
     }
-
     li {
         font-size: 11pt !important;
         line-height: 14pt;
         padding-bottom: 8px;
+        margin-left: 24px;
     }
 
 </style>
