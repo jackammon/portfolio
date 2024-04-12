@@ -1,21 +1,18 @@
 <template>
   <div>
     
-    <Temp/>
-    <!-- <Scroll/> -->
+    <Landing/>
   </div>
 </template>
 
 <script>
-  import Temp from '../components/Temp';
-  // import Scroll from '../components/Scroll';
+  import Landing from '../components/Landing';
 
   export default {
     name: 'Home',
 
     components: {
-      Temp
-      // Scroll
+      Landing
     },
   }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="projects">
     <v-row style="padding-top: 16px;"> 
       <v-col> 
         <div class="title"> UP Movement </div> 
@@ -104,6 +104,11 @@
 
 <style scoped>
 
+.projects {
+  max-width: 850px;
+  margin: auto;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -114,8 +119,8 @@ body {
   float: left;
   perspective: 400;
   font-family: 'Rubik' !important;
-  font-weight: 900 !important;
-  font-size: 32pt !important;
+  font-weight: 800 !important;
+  font-size: 26pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
@@ -128,7 +133,7 @@ img {
 
 .text {
   text-align: left;
-  font-size: 14pt !important;
+  font-size: 11pt !important;
 }
 
 .sub-title {
