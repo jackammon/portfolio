@@ -101,9 +101,6 @@
 
                     <v-row class="titles"> Technical Manager </v-row>
                     <v-row class="text3">Fall 2019 - Spring 2021 @ Servant Engineering & Senior Design Projects for George Fox University</v-row>
-      
-                    <v-row class="p-title"> UP Movement </v-row>
-                    <v-row class="text3"> Fall 2019-Fall 2020 </v-row>
                     <v-row style="margin-top: 0px !important">
                         <ul>
                             <li>Led a team of four building a full-stack web app from scratch</li>
@@ -111,19 +108,10 @@
                             <li>Communicated project requirements and design ideas with the client.</li>
                             <li>Worked directly with a creative agency in an iterative development process.</li>
                             <li>Integrated Stripe.JS to handle donations.</li>
-                        </ul>
-                    </v-row>
-
-
-                    <v-row class="p-title"> Access Solutions </v-row>
-                    <v-row class="text3"> Fall 2020-Spring 2021</v-row>
-                    <v-row style="margin-top: 0px !important">
-                        <ul>
                             <li>Led a team of six to design and build a comprehensive scheduling system.</li>
                             <li>Ensured different phases of design and development progressed and integrated smoothly together.</li>
                             <li>Led weekly sprint meetings.</li>
                             <li>Gave presentations to my advisors and clients.</li>
-                            <li>Built the frontend in Vue.JS and the backend with MySQL and Django in a Docker container.</li>
                         </ul>
                     </v-row>
 
