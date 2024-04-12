@@ -33,7 +33,7 @@ body {
   padding-left: 17px;
   font-family: 'Rubik' !important;
   font-weight: 900 !important;
-  font-size: 32pt !important;
+  font-size: 28pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;

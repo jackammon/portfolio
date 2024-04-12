@@ -11,7 +11,7 @@
       >
         <v-tab class="jck-size" to="/">JCK</v-tab>
         <v-spacer style="width: 60%"></v-spacer>
-        <v-tab class="btn-size" to="resume">About</v-tab>
+        <v-tab class="btn-size" to="about">About</v-tab>
         <v-tab class="btn-size" to="projects">Experience</v-tab>
         <v-tab class="btn-size" to="/contact">Contact</v-tab>
         <v-tab class="btn-size" to="resume">Resume</v-tab>
