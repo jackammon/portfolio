@@ -46,9 +46,9 @@ body {
   text-transform: uppercase;
   color: black;
 }
-.title:before {
+/* .title:before {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   height: 100%;
   width: 6px;
@@ -58,7 +58,7 @@ body {
   opacity: 0;
   transform: translateX(-150px);
   animation: title-border-slide-in 0.35s ease-out forwards;
-}
+} */
 
 .effect:hover .title { color: white; }
 

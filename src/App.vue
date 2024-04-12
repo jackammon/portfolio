@@ -9,13 +9,15 @@
         background-color="transparent"
         color="black"
       >
-        <v-tab class="btn-size" to="/">Jack Ammon</v-tab>
-        <v-tab class="btn-size" to="resume">Resume</v-tab>
+        <v-tab class="jck-size" to="/">JCK</v-tab>
+        <v-spacer style="width: 60%"></v-spacer>
+        <v-tab class="btn-size" to="resume">About</v-tab>
         <v-tab class="btn-size" to="projects">Projects</v-tab>
         <v-tab class="btn-size" to="/contact">Contact</v-tab>
+        <v-tab class="btn-size" to="resume">Resume</v-tab>
       </v-tabs>
   </v-app-bar>
-  
+
   <v-main>
     <v-container
       class="fill-height"
@@ -88,6 +90,11 @@ export default {
 
 .btn-size {
   font-size: 14pt !important;
+  font-weight: 700 !important;
+}
+
+.jck-size {
+  font-size: 20pt !important;
   font-weight: 700 !important;
 }
 
