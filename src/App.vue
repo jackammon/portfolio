@@ -1,88 +1,61 @@
 <template>
-  <v-app id="app"
-  >
-  <v-app-bar
-  absolute
-  flat
-  color="white"> 
-
-    <v-btn
-    text
-    large
-    class="btn-size"
-    color="black"
-    to="/"
+  <v-app id="app">
+    <v-app-bar
+      absolute
+      flat
+      color="white"
+    > 
+      <v-tabs 
+        background-color="transparent"
+        color="black"
+      >
+        <v-tab class="btn-size" to="/">Jack Ammon</v-tab>
+        <v-tab class="btn-size" to="resume">Resume</v-tab>
+        <v-tab class="btn-size" to="projects">Projects</v-tab>
+        <v-tab class="btn-size" to="/contact">Contact</v-tab>
+      </v-tabs>
+  </v-app-bar>
+  
+  <v-main>
+    <v-container
+      class="fill-height"
+      fluid
+      style="padding-top: 56px; max-width: 100%"
     >
-      Jack Ammon
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col class="text-center">
+          <router-view/>  
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-main>
+
+    <!-- FAB -->
+    <v-btn
+      fixed
+      dark
+      fab
+      bottom
+      right
+      color="black"
+      href="https://github.com/jackammon"
+      target="__blank"
+      class="fab"
+      elevation="1"
+    >
+      <v-icon>mdi-github</v-icon>
     </v-btn>
 
-      <v-btn
-      color="black"
-      large
-      text
-      class="btn-size"
-      to="resume">
-        Resume
-      </v-btn>
-
-      <v-btn
-      color="black"
-      large
-      text
-      class="btn-size"
-      to="projects">
-        Projects
-      </v-btn>
-
-      <v-btn 
-    text
-    large
-    class="btn-size"
-    color="black"
-    to="/contact">
-        Contact
-      </v-btn>
-
-  </v-app-bar>
-   <v-btn
-    fixed
-    dark
-    fab
-    bottom
-    right
-    color="black"
-    href="https://github.com/jackammon"
-    target="__blank"
-    class="fab"
-    elevation="1"
-  >
-    <v-icon>mdi-github</v-icon>
-  </v-btn>
-    <v-main>
-      <v-container
-        class="fill-height"
-        fluid
-        style="padding-top: 56px;"
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col class="text-center">
-
-            <router-view/>
-                    
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
   </v-app>
 </template>
 
 <script>
 export default {
   mounted() {
-    console.log("hi there 👋");
+    console.log("Hi there 👋");
     console.log("I built this website using Vue.JS");
     console.log("If you'd like to get in contact with me my information is found under the contact page");
     console.log("Have a blessed day!");
@@ -90,7 +63,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app {
   font-family: 'Rubik';
   -webkit-font-smoothing: antialiased;
@@ -114,8 +87,12 @@ export default {
 }
 
 .btn-size {
-  font-size: 16pt !important;
+  font-size: 14pt !important;
   font-weight: 700 !important;
+}
+
+.v-tabs-slider {
+  display: none !important;
 }
 
 </style>
