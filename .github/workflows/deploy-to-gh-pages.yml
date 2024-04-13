@@ -10,30 +10,31 @@ jobs:
     runs-on: ubuntu-latest  # Specifies the runner environment
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2  # Checks out your repository under $GITHUB_WORKSPACE
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'  # Specifies the Node.js version
-          cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
-      
-      - name: Install pnpm
-        run: |
-          curl -fsSL https://get.pnpm.io/install.sh | sh -  # Installs pnpm using the recommended script
-      
-      - name: Install Dependencies
-        run: pnpm install  # Installs dependencies using pnpm
-      
-      - name: Build Project
-        run: pnpm run build  # Builds the project using pnpm
-      
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages  # Target branch to deploy to
-          keep_files: false  # Set to true to retain files not present in the new deployment
-      
+    - name: Checkout Repository
+      uses: actions/checkout@v2  # Checks out your repository under $GITHUB_WORKSPACE
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # Specifies the Node.js version
+        cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
+    
+    - name: Install pnpm
+      run: |
+        curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+        echo "$HOME/.local/share/pnpm" >> $GITHUB_PATH
+    
+    - name: Install Dependencies
+      run: pnpm install  # Installs dependencies using pnpm
+    
+    - name: Build Project
+      run: pnpm run build  # Builds the project using pnpm
+    
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: gh-pages  # Target branch to deploy to
+        keep_files: false  # Set to true to retain files not present in the new deployment
+    
