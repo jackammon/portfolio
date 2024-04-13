@@ -19,7 +19,7 @@ jobs:
         node-version: '20'  # Specifies the Node.js version
 
     - name: Install Dependencies
-      run: npm run install
+      run: npm ci
 
     - name: Build Project
       run: npm run build
