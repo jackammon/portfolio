@@ -19,10 +19,10 @@ jobs:
         node-version: '20'  # Specifies the Node.js version
         cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
 
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v2.0.1
-      with:
-        version: 7.x  # Specifies the pnpm version
+    - name: Install pnpm
+      run: |
+        npm install -g pnpm
+        echo "$(pnpm config get prefix)/bin" >> $GITHUB_PATH
 
     - name: Install Dependencies
       run: pnpm install  # Installs dependencies using pnpm
