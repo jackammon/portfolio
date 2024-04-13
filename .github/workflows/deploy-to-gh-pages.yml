@@ -17,12 +17,16 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20'  # Specifies the Node.js version
+        cache: 'pnpm'  # Optionally caches the dependencies using GitHub's cache action
+
+    - name: Install pnpm
+      run: npm install -g pnpm  # Installs pnpm globally
 
     - name: Install Dependencies
-      run: npm ci
+      run: pnpm install  # Installs dependencies using pnpm
 
     - name: Build Project
-      run: npm run build
+      run: pnpm run build  # Builds the project using pnpm
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
