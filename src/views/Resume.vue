@@ -99,8 +99,8 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="titles"> Technical Manager </v-row>
-                    <v-row class="text3">Fall 2019 - Spring 2021 @ Servant Engineering & Senior Design Projects for George Fox University</v-row>
+                    <v-row class="titles"> Servant Engineering Technical Manager </v-row>
+                    <v-row class="text3">Fall 2019 - Spring 2021 @ George Fox University</v-row>
                     <v-row style="margin-top: 0px !important">
                         <ul>
                             <li>Led a team of four building a full-stack web app from scratch</li>
