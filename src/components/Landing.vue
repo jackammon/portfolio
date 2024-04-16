@@ -50,8 +50,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background: white;
   border-radius: 75px;
   font-family: 'Montserrat', sans-serif;
@@ -69,8 +69,8 @@ div.effect:hover:before, div.effect:hover:after {
   display: block;
   content: '';
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background: #0197F6;
   border-radius: 75px;
   z-index: -1;
