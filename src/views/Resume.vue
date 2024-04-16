@@ -47,7 +47,7 @@
                 </v-col>
 
                 <!-- right side -->
-                <v-col>
+                <v-col cols="7">
                     <v-row class="section-header"> Experience </v-row>
                     
                     <v-row class="titles"> Software Engineering Manager </v-row>
@@ -178,6 +178,7 @@
         font-weight: 800 !important;
         text-wrap: nowrap; 
         margin-top: 6px !important;
+        width: 100% !important;
     }
 
     .sub-titles {
