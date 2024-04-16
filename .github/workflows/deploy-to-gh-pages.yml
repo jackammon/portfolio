@@ -35,6 +35,9 @@ jobs:
     
     - name: Build Project
       run: pnpm run build  # Builds the project using pnpm
+
+    - name: Copy index.html to 404.html
+      run: cp dist/index.html dist/404.html  # Copies index.html to 404.html in the dist folder
     
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
