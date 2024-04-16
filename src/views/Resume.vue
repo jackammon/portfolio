@@ -162,11 +162,7 @@
         font-size: 14pt !important;
         font-weight: 800 !important;
     }
-
-    .text-summary {
-        text-align: left;
-    }
-
+    
     .section-header {
         font-size: 22pt !important;
         font-weight: 800 !important;
@@ -187,11 +183,6 @@
         margin-top: 6px !important;
     }
 
-    .text1 {
-        font-size: 16pt !important;
-        font-weight: 500 !important;
-    }
-
     .text2 {
         font-size: 12pt !important;
         font-weight: 400 !important;
@@ -205,22 +196,10 @@
         margin-bottom: 8px;
     }
 
-    .p-fix {
-        margin-right: auto;
-        margin-left: auto;
-        /* max-width: 950px; */
-    }
-
-    .dates {
-        font-size: 12pt !important;
-        font-weight: 800 !important;
-    }
-
     ul {
         list-style-type:disc;
-        /* margin: 0; */
-        /* padding: 0; */
     }
+
     li {
         font-size: 11pt !important;
         line-height: 14pt;

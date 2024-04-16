@@ -128,10 +128,4 @@ img {
     margin-bottom: 16px;
 }
 
-.logos {
-  width: auto !important;
-  height: 50px!important;
-  padding-right: 16px;
-}
-
 </style>

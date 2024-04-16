@@ -5,9 +5,7 @@
       <v-col cols="5">
         <div class="effect">
           <div class="title">
-              <div class="title-word">Hello</div>
-              <div class="title-word">I'm</div>
-              <div class="title-word">Jack</div>
+              <div class="title-word">Hello I'm Jack</div>
           </div>
         </div>
       </v-col>
@@ -15,14 +13,6 @@
     </v-row>
   </v-container>
 </template>
-
-<script>
-  export default {
-    name: 'Title',
-
-  }
-
-</script>
 
 <style scoped>
 
@@ -40,126 +30,15 @@ body {
   perspective: 400;
   padding-left: 17px;
   font-family: 'Rubik' !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   font-size: 36pt !important;
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
   letter-spacing: .0125em !important;
 }
-/* .title:before {
-  content: '';
-  display: none;
-  position: absolute;
-  height: 100%;
-  width: 6px;
-  background: white;
-  top: 0;
-  left: -42px;
-  opacity: 0;
-  transform: translateX(-150px);
-  animation: title-border-slide-in 0.35s ease-out forwards;
-} */
 
 .effect:hover .title { color: white; }
-
-.title .title-word {
-  opacity: 0;
-  transform-origin: bottom center;
-  transform: rotateX(-90deg);
-}
-.title .title-word:nth-child(1) {
-  animation: roll-in 0.15s 0s ease-out forwards;
-}
-.title .title-word:nth-child(2) {
-  animation: roll-in 0.15s 0.175s ease-out forwards;
-}
-.title .title-word:nth-child(3) {
-  animation: roll-in 0.15s 0.35s ease-out forwards;
-}
-.title .title-word:nth-child(4) {
-  animation: roll-in 0.15s 0.525s ease-out forwards;
-}
-@-moz-keyframes title-border-slide-in {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes title-border-slide-in {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-o-keyframes title-border-slide-in {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes title-border-slide-in {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-moz-keyframes roll-in {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes roll-in {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
-@-o-keyframes roll-in {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
-@keyframes roll-in {
-  0% {
-    transform: rotateX(-90deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
 
 .effect {
 
