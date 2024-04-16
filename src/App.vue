@@ -4,6 +4,7 @@
       absolute
       flat
       color="white"
+      class="nav"
     >
       <v-tabs
         background-color="transparent"
@@ -39,17 +40,32 @@
     </v-main>
 
     <!-- FAB -->
-    <!-- <v-fab
+    <!-- <v-btn
       icon
+      variant="text"
       color="black"
       href="https://github.com/jackammon"
+      target="_blank"
+      class="mb-12 mr-2"
+      location="bottom end"
+      position="fixed"
+    >
+      <v-icon>mdi-github</v-icon>
+    </v-btn> -->
+
+    <v-btn
+      icon
+      variant="text"
+      size="large"
+      color="black"
+      href="http://www.linkedin.com/in/jackammon"
       target="_blank"
       class="ma-2"
       location="bottom end"
       position="fixed"
     >
-      <v-icon>mdi-github</v-icon>
-    </v-fab> -->
+      <v-icon size="large">mdi-linkedin</v-icon>
+    </v-btn>
 
   </v-app>
 </template>
@@ -74,7 +90,7 @@ onMounted(() => {
 
 <style lang="scss">
 #app {
-  font-family: 'Rubik';
+  font-family: 'Rubik', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -84,11 +100,14 @@ onMounted(() => {
 .btn-size {
   font-size: 14pt !important;
   font-weight: 700 !important;
+  letter-spacing: .5pt !important;
 }
 
 .jck-size {
   font-size: 20pt !important;
   font-weight: 700 !important;
+  font-family: 'Rubik Mono One';
+  letter-spacing: -2.755pt !important;
 }
 
 .active-tab {
@@ -98,4 +117,5 @@ onMounted(() => {
 .inactive-tab {
   color: grey !important; /* Inactive tab color */
 }
+
 </style>

@@ -21,13 +21,14 @@ export default defineConfig({
     ViteFonts({
       google: {
         families: [{
-          name: 'Roboto',
-          styles: 'wght@100;300;400;500;700;900',
+          name: 'Rubik',
+          styles: 'wght@400;500;700;900',
         },
         {
-          name: 'Rubik',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
+          name: 'Rubik Mono One',
+          styles: 'wght@400',
+        },
+      ],
       },
     }),
   ],
