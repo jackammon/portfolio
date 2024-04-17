@@ -25,7 +25,7 @@
     </v-app-bar>
 
     <!-- Navigation Drawer -->
-    <v-navigation-drawer v-model="drawer" class="hidden-md-and-up" location="right" app>
+    <v-navigation-drawer v-model="drawer" class="hidden-md-and-up" location="right" width="5000" color="#1072fa" floating>
       <v-list>
         <v-list-item v-for="(item, i) in menuItems" :key="i" link :href="item.link">
           <v-list-item-content>
@@ -47,7 +47,7 @@
 
     <v-btn
       icon
-      variant="text"
+      variant="plain"
       size="large"
       color="black"
       href="http://www.linkedin.com/in/jackammon"
@@ -112,7 +112,7 @@ onMounted(() => {
 
 @media (max-width: 600px) {
   .btn-size {
-    font-size: 12pt !important;
+    font-size: 16pt !important;
   }
 
   .jck-size {

@@ -8,7 +8,7 @@
 
             <v-row style="padding-top: 16px;">
                 <!-- left slide -->
-                <v-col cols="5">
+                <v-col :cols="mdAndUp ? 5 : 12">
                     <v-row class="section-header">Contact</v-row>
                     <v-row> <a class="text">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
                     <v-row> <a class="text" href="mailto:jcarunner@gmail.com"> &#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; </a> </v-row>
@@ -47,7 +47,7 @@
                 </v-col>
 
                 <!-- right side -->
-                <v-col cols="7">
+                <v-col :cols="mdAndUp ? 5 : 12">
                     <v-row class="section-header"> Experience </v-row>
                     
                     <v-row class="titles"> Software Engineering Manager </v-row>
@@ -121,6 +121,18 @@
 
   </div>
 </template>
+
+<script>
+  import { useDisplay } from 'vuetify'
+
+    export default {
+    setup () {
+        const { mdAndUp } = useDisplay()
+
+        return { mdAndUp }
+    }
+  }
+</script>
 
 <style lang="css" scoped>
 
@@ -206,5 +218,31 @@
         padding-bottom: 8px;
         margin-left: 24px;
     }
+
+    @media (max-width: 960px) {
+    .name {
+      font-size: 24pt !important;
+    }
+
+    .sub-header {
+      font-size: 16pt !important;
+    }
+
+    .section-header {
+      font-size: 18pt !important;
+    }
+
+    .titles {
+      font-size: 16pt !important;
+    }
+
+    li {
+      font-size: 10pt !important;
+    }
+
+    .v-row {
+        max-width: 85vw;
+    }
+  }
 
 </style>
