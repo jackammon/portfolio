@@ -1,8 +1,7 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col cols="3"> </v-col>
-      <v-col cols="5">
+      <v-col>
         <div class="effect">
           <div class="contact">
               <div>You can reach me at </div>
@@ -11,7 +10,6 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="3"> </v-col>
     </v-row>
   </v-container>
 </template>
@@ -29,7 +27,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-left: 17px;
   font-family: 'Rubik' !important;
   font-weight: 800 !important;
   font-size: 28pt;
@@ -41,14 +38,23 @@ body {
 /* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   .contact {
-    font-size: 18pt; /* smaller font size for tablets */
+    font-size: 22pt; /* smaller font size for tablets */
   }
 }
 
 /* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
-  .title {
-    font-size: 8pt; /* even smaller font size for mobile phones */
+  .contact {
+    font-size: 16.5pt !important; /* even smaller font size for mobile phones */
+    top: 40%; /* adjust position slightly for better viewing */
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+@media (max-width: 315px) {
+  .contact {
+    font-size: 14pt !important; /* even smaller font size for mobile phones */
     top: 40%; /* adjust position slightly for better viewing */
     left: 50%;
     transform: translate(-50%, -40%);

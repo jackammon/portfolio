@@ -91,4 +91,13 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .title {
+    font-size: 3em;
+    top: 40%; /* adjust position slightly for better viewing */
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
 </style>
