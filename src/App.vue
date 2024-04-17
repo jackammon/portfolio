@@ -3,7 +3,7 @@
     <v-app-bar
       absolute
       flat
-      color="white"
+      color="rgba(0, 0, 0, 0.0)"
       class="nav"
     >
       <v-tabs
@@ -12,28 +12,20 @@
         grow
         hide-slider
         v-model="currentTab"
+
       >
-        <v-tab class="jck-size" to="/" :value="1" :class="tabClass(1)">JCK</v-tab>
+        <v-tab class="jck-size logo" to="/" :value="1" :class="tabClass(1)" :color="!drawer ? 'black' : 'white'">JCK</v-tab>
         <v-spacer style="width: 70%"></v-spacer>
         <v-tab class="btn-size hidden-sm-and-down" to="/about" :value="2" :class="tabClass(2)">About</v-tab>
         <v-tab class="btn-size hidden-sm-and-down" to="/contact" :value="4" :class="tabClass(4)">Contact</v-tab>
         <v-tab class="btn-size hidden-sm-and-down" to="/resume" :value="5" :class="tabClass(5)">Resume</v-tab>
       </v-tabs>
-      <v-btn icon class="hidden-md-and-up" @click="drawer = !drawer">
+      <v-btn icon class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
 
-    <!-- Navigation Drawer -->
-    <v-navigation-drawer v-model="drawer" class="hidden-md-and-up" location="right" width="5000" color="#1072fa" floating>
-      <v-list>
-        <v-list-item v-for="(item, i) in menuItems" :key="i" link :href="item.link">
-          <v-list-item-content>
-            <v-list-item-title class="text-left btn-size">{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <NavDrawer :isOpen="drawer"/>
 
     <v-main class="pa-0 fill-height">
       <v-container class="fill-height" fluid style="padding-top: 56px;">
@@ -49,12 +41,13 @@
       icon
       variant="plain"
       size="large"
-      color="black"
+      :color="!drawer ? 'black' : 'white'"
       href="http://www.linkedin.com/in/jackammon"
       target="_blank"
       class="ma-2"
       location="bottom end"
       position="fixed"
+      style="z-index: 9999 !important;"
     >
       <v-icon size="large">mdi-linkedin</v-icon>
     </v-btn>
@@ -64,6 +57,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import NavDrawer from './components/NavDrawer.vue';
 
 const currentTab = ref(1);
 const drawer = ref(false);
@@ -129,4 +123,9 @@ onMounted(() => {
   color: grey !important; /* Inactive tab color */
 }
 
+.logo {
+  text-align: left;
+  justify-content: start !important;
+  position: absolute;
+}
 </style>
