@@ -25,7 +25,7 @@
       </v-btn>
     </v-app-bar>
 
-    <NavDrawer :isOpen="drawer"/>
+    <NavDrawer :isOpen="drawer" />
 
     <v-main class="pa-0 fill-height">
       <v-container class="fill-height" fluid style="padding-top: 56px;">
@@ -104,6 +104,20 @@ onMounted(() => {
   letter-spacing: -2.755pt !important;
 }
 
+.logo {
+  text-align: left;
+  justify-content: start !important;
+  position: absolute;
+}
+
+.active-tab {
+  color: black !important;
+}
+
+.inactive-tab {
+  color: grey !important;
+}
+
 @media (max-width: 600px) {
   .btn-size {
     font-size: 16pt !important;
@@ -115,17 +129,14 @@ onMounted(() => {
   }
 }
 
-.active-tab {
-  color: black !important; /* Active tab color */
+@media (max-width: 960px) {
+  .active-tab {
+    color: white !important;
+  }
+
+  .inactive-tab {
+    color: white !important;
+  }
 }
 
-.inactive-tab {
-  color: grey !important; /* Inactive tab color */
-}
-
-.logo {
-  text-align: left;
-  justify-content: start !important;
-  position: absolute;
-}
 </style>
