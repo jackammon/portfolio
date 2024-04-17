@@ -25,7 +25,7 @@
     </v-app-bar>
 
     <!-- Navigation Drawer -->
-    <v-navigation-drawer v-model="drawer" location="right" app>
+    <v-navigation-drawer v-model="drawer" class="hidden-md-and-up" location="right" app>
       <v-list>
         <v-list-item v-for="(item, i) in menuItems" :key="i" link :href="item.link">
           <v-list-item-content>
