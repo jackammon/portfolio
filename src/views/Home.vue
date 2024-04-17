@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import Landing from '../components/Landing';
+  import Landing from '../components/LandingV2.vue';
 
   export default {
     name: 'Home',
