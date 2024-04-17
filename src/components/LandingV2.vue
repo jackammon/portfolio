@@ -2,7 +2,7 @@
   <v-container>
     <v-row class="text-center">
       <div class="title">
-          <div class="title-word" ref="textElement"></div>
+        <div class="title-word" ref="textElement"></div>
       </div>
     </v-row>
   </v-container>
@@ -19,10 +19,9 @@ export default {
     const texts = [
       "Hello,<br>I'm Jack Ammon",
       "Welcome to my slice of the internet",
-      "I build cool things",
       "I build things designed to last",
       "I build things that help people",
-      "I build things that bring good into the world",
+      "I build cool things",
       "jck.codes",
     ];
     let currentText = 0;
@@ -78,14 +77,14 @@ body {
 /* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   .title {
-    font-size: 4em; /* smaller font size for tablets */
+    font-size: 4em;
   }
 }
 
 /* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
   .title {
-    font-size: 4em; /* even smaller font size for mobile phones */
+    font-size: 4em;
     top: 40%; /* adjust position slightly for better viewing */
     left: 50%;
     transform: translate(-50%, -40%);
