@@ -15,6 +15,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const drawer = ref(null);
+const emit = defineEmits(['update:isOpen']);
 const props = defineProps({
   isOpen: Boolean
 });
@@ -26,8 +27,9 @@ const menuItems = [
 ];
 
 function toLink(link) {
+  console.log('toLink');
+  emit('update:isOpen', false);  // Emit event to update isOpen in the parent
   router.push(link);
-  props.isOpen = false;
 }
 
 onMounted(() => {
