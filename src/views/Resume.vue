@@ -1,37 +1,37 @@
 <template>
   <div class="resume" style="padding-top: 20px;">
-    
       <v-container class="p-fix"> 
-            <v-row class="name"> Jack Ammon </v-row>
-            <v-row class ="sub-header"> Full Stack Software Engineer </v-row>
-            <v-row class="text"> Innovative and strategic thinker, with a Computer Science foundation and experience bringing software products to launch. Blending technical insight with a keen eye for business and design, I excel in bringing clarity, direction, and alignment, passionately driving teams towards unified objectives. </v-row>
+            <v-row class="title"> Jack Ammon </v-row>
+            <v-row class ="sub-title"> Full Stack Software Engineer </v-row>
+            <v-row class="text" style="margin-top: 18px;"> Innovative and strategic thinker, with a Computer Science foundation and experience bringing software products to launch. Blending technical insight with a keen eye for business and design, I excel in bringing clarity, direction, and alignment, passionately driving teams towards unified objectives. </v-row>
 
-            <v-row style="padding-top: 16px;">
+            <v-row style="padding-top: 18px;">
                 <!-- left slide -->
                 <v-col :cols="mdAndUp ? 5 : 12">
-                    <v-row class="section-header">Contact</v-row>
-                    <v-row> <a class="text">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
+                    <v-row class="header">Contact</v-row>
+                    <v-row> <a class="text" style="padding-top: 2px">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
                     <v-row> <a class="text" href="mailto:jcarunner@gmail.com"> &#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; </a> </v-row>
                     <v-row> <a class="text" href="https://github.com/jackammon"> github.com/jackammon </a> </v-row>
                     <v-row> <a class="text" href="http://www.linkedin.com/in/jackammon"> linkedin.com/in/jackammon </a> </v-row>
 
-                    <v-row class="section-header" style="padding-top: 16px;"> Skills </v-row>
-                    <v-row class="titles"> Hard </v-row>
+                    <v-row class="header" style="padding-top: 16px;"> Skills </v-row>
+                    <v-row class="sub-header" style="padding-top: 2px"> Hard </v-row>
                         
                     <v-row class="text"> - Frontend: TypeScript, Vue.JS, Angular </v-row>     
                     <v-row class="text"> - Backend: NET, Node.js, Laravel </v-row>
                     <v-row class="text"> - Git, Docker, Unix </v-row>
                     <v-row class="text"> - OO programming </v-row>
                     
-                    <v-row class="titles" style="padding-top: 8px;"> Soft </v-row>
+                    <v-row class="sub-header" style="padding-top: 8px;"> Soft </v-row>
                     <v-row class="text"> - Writing and Speaking </v-row>
                     <v-row class="text"> - Team-Building </v-row>
                     <v-row class="text"> - Coordinating and delegating tasks </v-row>
                     <v-row class="text"> - Decision making </v-row>
 
-                    <v-row class="section-header" style="padding-top: 16px;"> Education </v-row>
-                    <v-row class="titles"> B.S. Computer Science </v-row>
+                    <v-row class="header" style="padding-top: 16px;"> Education </v-row>
+                    <v-row class="sub-header" style="padding-top: 2px"> B.S. Computer Science </v-row>
                     <v-row class="text2"> @ George Fox University, 2021 </v-row>
+
                     <v-row class="p-title" style="padding-top: 16px;"> Relevant Courses </v-row>
                     <v-row class="i-text"> - Data Structures </v-row>
                     <v-row class="i-text"> - Object Oriented Design & Analysis </v-row>
@@ -42,19 +42,17 @@
                     <v-row class="i-text"> - Human Computer Interactions </v-row>
                     <v-row class="i-text"> - Operating Systems </v-row>
                     <v-row class="i-text"> - Computer Security & Digital Forensics </v-row>
-
-
                 </v-col>
 
                 <!-- right side -->
-                <v-col :cols="mdAndUp ? 5 : 12">
-                    <v-row class="section-header"> Experience </v-row>
+                <v-col :cols="mdAndUp ? 7 : 12">
+                    <v-row class="header" :class="{'mobile-spacing': !mdAndUp}"> Experience </v-row>
                     
-                    <v-row class="titles"> Software Engineering Manager </v-row>
+                    <v-row class="sub-header" style="padding-top: 2px"> Software Engineering Manager </v-row>
                     <v-row class="text3"> June 2022 - March 2024 @ Buildable</v-row>
 
                     <v-row>
-                        <b>30% - Management</b>
+                        <b style="width: 100%;">30% - Management</b>
                         <ul>
                             <li>Led a team of 5 direct report engineers working on multiple projects.</li>
                             <li>Made resource allocation decisions for weekly company production.</li>
@@ -64,7 +62,7 @@
                     </v-row>
 
                     <v-row style="margin-bottom: 8px">
-                        <b>70% - Engineering</b>
+                        <b style="width: 100%;">70% - Engineering</b>
                         <ul>
                             <li>Wrote performant front-end components in Vue and Angular.</li>
                             <li>Wrote performant .NET and Laravel backends.</li>
@@ -74,7 +72,7 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="titles"> Software Engineer </v-row>
+                    <v-row class="sub-header"> Software Engineer </v-row>
                     <v-row class="text3"> July 2021 - June 2022 @ Buildable</v-row>
                     <v-row style="margin-bottom: 8px">
                         <ul>
@@ -88,7 +86,7 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="titles"> Freelance Software Developer </v-row>
+                    <v-row class="sub-header"> Freelance Software Developer </v-row>
                     <v-row class="text3">May 2019 - December 2020 @ Kingdom Web Development LLC</v-row>
                     <v-row style="margin-bottom: 16px">
                         <ul>
@@ -99,7 +97,8 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="titles"> Servant Engineering Technical Manager </v-row>
+                    <v-row class="sub-header" v-if="mdAndUp"> Servant Engineering Technical Manager </v-row>
+                    <v-row class="sub-header" v-if="!mdAndUp"> Servant Engineering Technical <br><div style="margin-top: -8px;">Manager</div></v-row>
                     <v-row class="text3">Fall 2019 - Spring 2021 @ George Fox University</v-row>
                     <v-row style="margin-top: 0px !important">
                         <ul>
@@ -118,7 +117,6 @@
                 </v-col>
             </v-row>
       </v-container>
-
   </div>
 </template>
 
@@ -147,13 +145,13 @@
         margin: auto;
     }
 
-    .name {
+    .title {
         font-weight: 800 !important;
         font-size: 32pt !important;
-        line-height: 1.2em;
+        line-height: 1em;
     }
 
-    .sub-header {
+    .sub-title {
         text-align: left;
         font-weight: 800 !important;
         font-size: 20pt !important;
@@ -175,13 +173,13 @@
         font-weight: 800 !important;
     }
     
-    .section-header {
-        font-size: 22pt !important;
+    .header {
+        font-size: 16pt !important;
         font-weight: 800 !important;
         text-decoration-line: underline;
     }
 
-    .titles {
+    .sub-header {
         font-size: 20pt !important;
         font-weight: 800 !important;
         text-wrap: nowrap; 
@@ -189,7 +187,7 @@
         width: 100% !important;
     }
 
-    .sub-titles {
+    .sub-sub-header {
         font-size: 18pt !important;
         font-weight: 800 !important;
         margin-top: 6px !important;
@@ -204,7 +202,7 @@
     .text3 {
         font-size: 12pt !important;
         font-weight: 400 !important;
-        margin-top: 6px;
+        margin-top: 8px;
         margin-bottom: 8px;
     }
 
@@ -219,30 +217,34 @@
         margin-left: 24px;
     }
 
+    .mobile-spacing {
+        padding-top: 16px;
+    }
+
     @media (max-width: 960px) {
-    .name {
-      font-size: 24pt !important;
-    }
+        .title {
+        font-size: 24pt !important;
+        }
 
-    .sub-header {
-      font-size: 16pt !important;
-    }
+        .sub-title {
+        font-size: 16pt !important;
+        }
 
-    .section-header {
-      font-size: 18pt !important;
-    }
+        .header {
+        font-size: 18pt !important;
+        }
 
-    .titles {
-      font-size: 16pt !important;
-    }
+        .sub-header {
+        font-size: 16pt !important;
+        }
 
-    li {
-      font-size: 10pt !important;
-    }
+        li {
+        font-size: 10pt !important;
+        }
 
-    .v-row {
-        max-width: 85vw;
+        .v-row {
+            max-width: 85vw;
+        }
     }
-  }
 
 </style>
