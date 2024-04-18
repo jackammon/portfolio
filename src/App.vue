@@ -5,6 +5,7 @@
       flat
       color="rgba(0, 0, 0, 0.0)"
       class="nav"
+      style="padding-right: 15px;"
     >
       <v-tabs
         background-color="transparent"
@@ -12,18 +13,26 @@
         grow
         hide-slider
         v-model="currentTab"
-
       >
         <v-tab class="jck-size logo" to="/" @click="drawer = false" :value="1" :class="tabClass(1)" :style="!drawer ? 'color: black' : 'color: white !important'">JCK</v-tab>
-        <v-spacer style="width: 70%"></v-spacer>
-        <v-tab class="btn-size hidden-sm-and-down" to="/about" :value="2" :class="tabClass(2)">About</v-tab>
-        <v-tab class="btn-size hidden-sm-and-down" to="/contact" :value="4" :class="tabClass(4)">Contact</v-tab>
-        <v-tab class="btn-size hidden-sm-and-down" to="/resume" :value="5" :class="tabClass(5)">Resume</v-tab>
+        <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'">
-        <v-icon>mdi-menu</v-icon>
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'" style="left: 2px;">
+        <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
+
+      <v-btn
+          class="btn-size hidden-sm-and-down"
+          :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
+          variant="text"
+          @click="drawer = !drawer" 
+          :color="!drawer ? 'black' : 'white'"
+          border
+          style="margin-top: 3px;"
+        >
+        MENU
+        </v-btn>
     </v-app-bar>
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
@@ -97,7 +106,7 @@ onMounted(() => {
 }
 
 .btn-size {
-  font-size: 14pt !important;
+  font-size: 12pt !important;
   font-weight: 700 !important;
   letter-spacing: -.02em !important;
 }
