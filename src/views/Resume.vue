@@ -98,7 +98,8 @@
                     </v-row>
 
                     <v-row class="sub-header" v-if="mdAndUp"> Servant Engineering Technical Manager </v-row>
-                    <v-row class="sub-header" v-if="!mdAndUp"> Servant Engineering Technical <br><div style="margin-top: -8px;">Manager</div></v-row>
+                    <v-row class="sub-header" v-if="!mdAndUp"> Servant Engineering Technical</v-row>
+                    <v-row class="sub-header" v-if="!mdAndUp"><div style="margin-top: -4px;">Manager</div></v-row>
                     <v-row class="text3">Fall 2019 - Spring 2021 @ George Fox University</v-row>
                     <v-row style="margin-top: 0px !important">
                         <ul>
