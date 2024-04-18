@@ -143,6 +143,8 @@
         text-align: left;
         max-width: 850px;
         margin: auto;
+        position: relative !important;
+        right: 5px !important;
     }
 
     .title {
