@@ -51,7 +51,7 @@
                     <v-row class="sub-header" style="padding-top: 2px"> Software Engineering Manager </v-row>
                     <v-row class="text3"> June 2022 - March 2024 @ Buildable</v-row>
 
-                    <v-row>
+                    <v-row style="margin-top: 0px;">
                         <b style="width: 100%;">30% - Management</b>
                         <ul>
                             <li>Led a team of 5 direct report engineers working on multiple projects.</li>
@@ -61,7 +61,7 @@
                         </ul>
                     </v-row>
 
-                    <v-row style="margin-bottom: 8px">
+                    <v-row style="margin-bottom: 8px; margin-top: 0px;">
                         <b style="width: 100%;">70% - Engineering</b>
                         <ul>
                             <li>Wrote performant front-end components in Vue and Angular.</li>
