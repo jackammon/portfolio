@@ -72,6 +72,7 @@ body {
   line-height: 1.2em;
   color: black;
   text-align: left;
+  letter-spacing: -.02em !important;
 }
 
 /* Responsive adjustments for tablets */

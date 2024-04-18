@@ -27,7 +27,6 @@ const menuItems = [
 ];
 
 function toLink(link) {
-  console.log('toLink');
   emit('update:isOpen', false);  // Emit event to update isOpen in the parent
   router.push(link);
 }
@@ -38,9 +37,9 @@ onMounted(() => {
 
 watch(() => props.isOpen, (newValue) => {
   if (newValue) {
-    gsap.to(drawer.value, { y: '0%', duration: 0.66, ease: 'power2.inOut' });
+    gsap.to(drawer.value, { y: '0%', duration: 1, ease: 'power3.inOut' });
   } else {
-    gsap.to(drawer.value, { y: '-100%', duration: 0.66, ease: 'power2.in' });
+    gsap.to(drawer.value, { y: '-100%', duration: 1, ease: 'power3.inOut' });
   }
 });
 </script>
@@ -54,6 +53,9 @@ watch(() => props.isOpen, (newValue) => {
   height: 100%;
   background-color: #1072fa;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 ul {
   list-style: none;
@@ -65,10 +67,12 @@ li a {
   text-decoration: none;
 }
 .tab {
-  height: 64px !important;
-  font-size: 28pt !important;
+  height: 72px !important;
+  font-size: 36pt !important;
   font-weight: 700 !important;
   letter-spacing: .5pt !important;
   padding-top: 20px !important;
+  letter-spacing: -.02em !important;
+  line-height: .75em !important;
 }
 </style>

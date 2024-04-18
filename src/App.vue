@@ -98,7 +98,7 @@ onMounted(() => {
 .btn-size {
   font-size: 14pt !important;
   font-weight: 700 !important;
-  letter-spacing: .5pt !important;
+  letter-spacing: -.02em !important;
 }
 
 .jck-size {

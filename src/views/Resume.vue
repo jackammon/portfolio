@@ -149,12 +149,14 @@
         font-weight: 800 !important;
         font-size: 32pt !important;
         line-height: 1em;
+        letter-spacing: -.02em;
     }
 
     .sub-title {
         text-align: left;
         font-weight: 800 !important;
         font-size: 20pt !important;
+        letter-spacing: -.02em;
     }
 
     .text {
@@ -177,6 +179,7 @@
         font-size: 16pt !important;
         font-weight: 800 !important;
         text-decoration-line: underline;
+        letter-spacing: -.02em;
     }
 
     .sub-header {
@@ -185,12 +188,7 @@
         text-wrap: nowrap; 
         margin-top: 6px !important;
         width: 100% !important;
-    }
-
-    .sub-sub-header {
-        font-size: 18pt !important;
-        font-weight: 800 !important;
-        margin-top: 6px !important;
+        letter-spacing: -.02em;
     }
 
     .text2 {

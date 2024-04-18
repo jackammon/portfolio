@@ -33,6 +33,7 @@ body {
   line-height: 1.2em;
   text-transform: uppercase;
   color: black;
+  letter-spacing: -.02em;
 }
 
 /* Responsive adjustments for tablets */
