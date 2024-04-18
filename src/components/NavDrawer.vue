@@ -74,5 +74,6 @@ li a {
   padding-top: 20px !important;
   letter-spacing: -.02em !important;
   line-height: .75em !important;
+  padding-left: 5px !important;
 }
 </style>

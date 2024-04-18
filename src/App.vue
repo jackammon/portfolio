@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-app-bar
       absolute
       flat
@@ -21,7 +21,7 @@
         <v-tab class="btn-size hidden-sm-and-down" to="/resume" :value="5" :class="tabClass(5)">Resume</v-tab>
       </v-tabs>
 
-      <v-btn icon class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'">
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
@@ -29,7 +29,7 @@
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
 
     <v-main class="pa-0 fill-height">
-      <v-container class="fill-height" fluid style="padding-top: 56px;">
+      <v-container class="fill-height app-padding" fluid style="padding-top: 56px;">
         <v-row align="center" justify="center">
           <v-col class="text-center">
             <router-view/>  
@@ -92,7 +92,8 @@ onMounted(() => {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: black;
+  color: #000;
+  // background-color: #fffdf9 !important;
 }
 
 .btn-size {
@@ -112,6 +113,12 @@ onMounted(() => {
   text-align: left;
   justify-content: start !important;
   position: absolute;
+  padding-left: 21px !important;
+}
+
+.app-padding {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
 }
 
 @media (min-width: 960px) {
