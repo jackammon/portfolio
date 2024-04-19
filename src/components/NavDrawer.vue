@@ -1,11 +1,11 @@
 <template>
-  <div class="nav-drawer" ref="drawer">
-    <v-list style="background-color: #1072fa; color: #fffdf9; margin-top: 84px;">
-        <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
-          <v-list-item-title :color="isOpen ? '#1072fa' : '#fffdf9'" class="text-left tab">{{ item.title }}</v-list-item-title>
-        </v-list-item>
-    </v-list>
-  </div>
+    <div class="nav-drawer" ref="drawer">
+      <v-list style="background-color: #1072fa; color: #fffdf9; margin-top: 84px;">
+          <v-list-item v-for="(item, i) in menuItems" :key="i" @click="toLink(item.link)" style="padding-left: 0 !important; border-radius: 4px;">
+            <v-list-item-title :color="isOpen ? '#1072fa' : '#fffdf9'" class="text-left tab nav-link">{{ item.title }}</v-list-item-title>
+          </v-list-item>
+      </v-list>
+    </div>
 </template>
 
 <script setup>
@@ -33,13 +33,19 @@ function toLink(link) {
 
 onMounted(() => {
   gsap.set(drawer.value, { y: '-100%' });
+  gsap.set(".nav-link", { opacity: 0 });
 });
 
 watch(() => props.isOpen, (newValue) => {
+  const duration = 1;
   if (newValue) {
-    gsap.to(drawer.value, { y: '0%', duration: 1, ease: 'power3.inOut' });
+    const tl = gsap.timeline();
+    tl.to(drawer.value, { y: '0%', duration: duration, ease: 'power3.inOut' })
+      .to(".nav-link", { opacity: 1, y: 0, stagger: 0.125, ease: "power2.inOut", duration: 0.6 }, duration / 2); // Start halfway through drawer animation
   } else {
-    gsap.to(drawer.value, { y: '-100%', duration: 1, ease: 'power3.inOut' });
+    const tl = gsap.timeline();
+    tl.to(drawer.value, { y: '-100%', duration: duration, ease: 'power2.inOut' })
+      .set(".nav-link", { opacity: 0, y: 0 });
   }
 });
 </script>
