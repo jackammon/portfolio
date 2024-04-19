@@ -48,8 +48,9 @@
                 <!-- right side -->
                 <v-col :cols="mdAndUp ? 7 : 12">
                     <v-row class="header" :class="{'mobile-spacing': !mdAndUp}"> Experience </v-row>
-                    
-                    <v-row class="sub-header" style="padding-top: 2px"> Software Engineering Manager </v-row>
+                    <v-row class="sub-header" v-if="smAndUp"> Software Engineering Manager </v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"> Software Engineering</v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"><div style="margin-top: -4px;"> Manager</div></v-row>
                     <v-row class="text3"> June 2022 - March 2024 @ Buildable</v-row>
 
                     <v-row style="margin-top: 0px;">
@@ -87,7 +88,9 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="sub-header"> Freelance Software Developer </v-row>
+                    <v-row class="sub-header" v-if="smAndUp"> Freelance Software Developer </v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"> Freelance Software</v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"><div style="margin-top: -4px;"> Developer</div></v-row>
                     <v-row class="text3">May 2019 - December 2020 @ Kingdom Web Development LLC</v-row>
                     <v-row style="margin-bottom: 16px">
                         <ul>
@@ -98,9 +101,9 @@
                         </ul>
                     </v-row>
 
-                    <v-row class="sub-header" v-if="mdAndUp"> Servant Engineering Technical Manager </v-row>
-                    <v-row class="sub-header" v-if="!mdAndUp"> Servant Engineering Technical</v-row>
-                    <v-row class="sub-header" v-if="!mdAndUp"><div style="margin-top: -4px;">Manager</div></v-row>
+                    <v-row class="sub-header" v-if="smAndUp"> Servant Engineering Technical Manager </v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"> Servant Engineering</v-row>
+                    <v-row class="sub-header" v-if="!smAndUp"><div style="margin-top: -4px;"> Technical Manager</div></v-row>
                     <v-row class="text3">Fall 2019 - Spring 2021 @ George Fox University</v-row>
                     <v-row style="margin-top: 0px !important">
                         <ul>
@@ -127,9 +130,9 @@
 
     export default {
     setup () {
-        const { mdAndUp } = useDisplay()
+        const { smAndUp, mdAndUp } = useDisplay()
 
-        return { mdAndUp }
+        return { smAndUp, mdAndUp }
     }
   }
 </script>
@@ -247,10 +250,10 @@
             text-transform: uppercase;
             font-weight: 500;
             padding-bottom: 18px;
-            }
+        }
 
         li {
-        font-size: 10pt !important;
+            font-size: 10pt !important;
         }
 
         .v-row {
