@@ -14,11 +14,11 @@
         hide-slider
         v-model="currentTab"
       >
-        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: white !important'">JCK</v-tab>
+        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: #fffdf9 !important'">JCK</v-tab>
         <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : 'white'" style="left: 2px;">
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'" style="left: 2px;">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
@@ -27,7 +27,7 @@
           :prepend-icon="drawer ? 'mdi-close' : 'mdi-menu'"
           variant="text"
           @click="drawer = !drawer" 
-          :color="!drawer ? 'black' : 'white'"
+          :color="!drawer ? 'black' : '#fffdf9'"
           border
           style="margin-top: 3px;"
         >
@@ -56,7 +56,7 @@
       icon
       variant="plain"
       size="large"
-      :color="!drawer ? 'black' : 'white'"
+      :color="!drawer ? 'black' : '#fffdf9'"
       href="http://www.linkedin.com/in/jackammon"
       target="_blank"
       class="ma-2"
@@ -134,7 +134,7 @@ onMounted(() => {
   transform: translateX(-50%);
   z-index: 1000;
   padding: 24px 25px;
-  color: white;
+  color: #fffdf9;
   text-transform: uppercase;
   font-family: 'Rubik';
 }
