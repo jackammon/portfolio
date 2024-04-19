@@ -40,11 +40,11 @@ watch(() => props.isOpen, (newValue) => {
   const duration = 1;
   if (newValue) {
     const tl = gsap.timeline();
-    tl.to(drawer.value, { y: '0%', duration: duration, ease: 'power3.inOut' })
+    tl.to(drawer.value, { y: '0%', duration: duration, ease: 'power4.inOut' })
       .to(".nav-link", { opacity: 1, y: 0, stagger: 0.125, ease: "power2.inOut", duration: 0.6 }, duration / 2); // Start halfway through drawer animation
   } else {
     const tl = gsap.timeline();
-    tl.to(drawer.value, { y: '-100%', duration: duration, ease: 'power2.inOut' })
+    tl.to(drawer.value, { y: '-100%', duration: duration, ease: 'power4.inOut' })
       .set(".nav-link", { opacity: 0, y: 0 });
   }
 });
