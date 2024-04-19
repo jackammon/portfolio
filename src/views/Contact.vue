@@ -47,7 +47,7 @@ body {
 @media (max-width: 480px) {
   .contact {
     font-size: 16.5pt !important; /* even smaller font size for mobile phones */
-    top: 40%; /* adjust position slightly for better viewing */
+    top: 47%; /* adjust position slightly for better viewing */
     left: 50%;
     transform: translate(-50%, -40%);
   }
@@ -56,7 +56,7 @@ body {
 @media (max-width: 315px) {
   .contact {
     font-size: 14pt !important; /* even smaller font size for mobile phones */
-    top: 40%; /* adjust position slightly for better viewing */
+    top: 45%; /* adjust position slightly for better viewing */
     left: 50%;
     transform: translate(-50%, -40%);
   }
