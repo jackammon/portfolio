@@ -33,7 +33,7 @@ function toLink(link) {
 
 onMounted(() => {
   gsap.set(drawer.value, { y: '-100%' });
-  gsap.set(".nav-link", { opacity: 0 });
+  gsap.set(".nav-link", { y: 64, opacity: 1 });
 });
 
 watch(() => props.isOpen, (newValue) => {
@@ -41,11 +41,11 @@ watch(() => props.isOpen, (newValue) => {
   if (newValue) {
     const tl = gsap.timeline();
     tl.to(drawer.value, { y: '0%', duration: duration, ease: 'power4.inOut' })
-      .to(".nav-link", { opacity: 1, y: 0, stagger: 0.125, ease: "power2.inOut", duration: 0.6 }, duration / 2); // Start halfway through drawer animation
+      .to(".nav-link", { y: 0, stagger: 0.125, ease: 'power4.out', duration: .5 }, duration / 1.4); // Animate into position
   } else {
     const tl = gsap.timeline();
     tl.to(drawer.value, { y: '-100%', duration: duration, ease: 'power4.inOut' })
-      .set(".nav-link", { opacity: 0, y: 0 });
+      .set(".nav-link", { y: 64 });
   }
 });
 </script>
