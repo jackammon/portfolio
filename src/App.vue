@@ -14,7 +14,7 @@
         hide-slider
         v-model="currentTab"
       >
-        <v-tab class="jck-size logo" to="/" @click="drawer = false" :value="1" :class="tabClass(1)" :style="!drawer ? 'color: black' : 'color: white !important'">JCK</v-tab>
+        <v-tab class="jck-size logo" to="/" variant="text" @click="drawer = false" :style="!drawer ? 'color: black' : 'color: white !important'">JCK</v-tab>
         <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
 
@@ -71,12 +71,10 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import NavDrawer from './components/NavDrawer.vue';
 
-const currentTab = ref(1);
 const drawer = ref(false);
-const isMobile = computed(() => window.matchMedia("(max-width: 960px)").matches);
 
 const menuItems = [
   { title: 'Home', link: '/' },
@@ -84,12 +82,6 @@ const menuItems = [
   { title: 'Contact', link: '/contact' },
   { title: 'Resume', link: '/resume' }
 ];
-
-function tabClass(value) {
-  if (!isMobile.value) {
-    return currentTab.value === value ? 'active-tab' : 'inactive-tab';
-  }
-}
 
 onMounted(() => {
   console.log("Hi there 👋");
@@ -147,17 +139,6 @@ onMounted(() => {
   font-family: 'Rubik';
 }
 
-
-@media (min-width: 960px) {
-  .active-tab {
-    color: black !important;
-  }
-
-  .inactive-tab {
-    color: grey !important;
-  }
-}
-
 @media (max-width: 960px) {
   .btn-size {
     font-size: 16pt !important;
@@ -166,10 +147,6 @@ onMounted(() => {
   .jck-size {
     text-align: left !important;
     justify-content: flex-start !important;
-  }
-
-  .inactive-tab {
-    color: black !important;
   }
 }
 
