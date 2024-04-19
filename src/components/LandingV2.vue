@@ -66,13 +66,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Rubik', sans-serif; /* ensure fallback is specified */
-  font-weight: 700;
-  font-size: 5.75em; /* Default size for large screens */
-  line-height: 1.2em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 5.75vw;
+  line-height: 1.1em;
   color: black;
   text-align: left;
-  letter-spacing: -.02em !important;
+  letter-spacing: -.025em !important;
 }
 
 /* Responsive adjustments for tablets */
@@ -85,7 +85,7 @@ body {
 /* Responsive adjustments for mobile phones */
 @media (max-width: 480px) {
   .title {
-    font-size: 4em;
+    /* font-size: 4em; */
     top: 40%; /* adjust position slightly for better viewing */
     left: 50%;
     transform: translate(-50%, -40%);

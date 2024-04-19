@@ -249,14 +249,6 @@
             padding-bottom: 18px;
             }
 
-        /* .header {
-        font-size: 18pt !important;
-        }
-
-        .sub-header {
-        font-size: 16pt !important;
-        } */
-
         li {
         font-size: 10pt !important;
         }
