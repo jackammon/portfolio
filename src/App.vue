@@ -39,7 +39,7 @@
 
     <!-- floating nav footer -->
     <div v-if="drawer" class="floating-footer">
-      &copy 2020 - jck.codes 
+      jck.codes 
     </div>
 
     <v-main class="pa-0 fill-height">
