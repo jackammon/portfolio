@@ -37,6 +37,11 @@
 
     <NavDrawer :isOpen="drawer" @update:isOpen="drawer = $event" />
 
+    <!-- floating nav footer -->
+    <div v-if="drawer" class="floating-footer">
+      &copy 2020 - jck.codes 
+    </div>
+
     <v-main class="pa-0 fill-height">
       <v-container class="fill-height app-padding" fluid style="padding-top: 56px;">
         <v-row align="center" justify="center">
@@ -129,6 +134,19 @@ onMounted(() => {
   padding-left: 25px !important;
   padding-right: 25px !important;
 }
+
+.floating-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 24px 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Rubik';
+}
+
 
 @media (min-width: 960px) {
   .active-tab {
