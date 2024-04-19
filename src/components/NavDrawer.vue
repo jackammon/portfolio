@@ -41,7 +41,7 @@ watch(() => props.isOpen, (newValue) => {
   if (newValue) {
     const tl = gsap.timeline();
     tl.to(drawer.value, { y: '0%', duration: duration, ease: 'power4.inOut' })
-      .to(".nav-link", { y: 0, stagger: 0.125, ease: 'power4.out', duration: .5 }, duration / 1.4); // Animate into position
+      .to(".nav-link", { y: 0, stagger: 0.1, ease: 'power2.out', duration: .75 }, duration / 1.50); // Animate into position
   } else {
     const tl = gsap.timeline();
     tl.to(drawer.value, { y: '-100%', duration: duration, ease: 'power4.inOut' })
