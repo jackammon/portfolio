@@ -3,45 +3,46 @@
       <v-container class="p-fix"> 
             <v-row class="title"> Jack Ammon </v-row>
             <v-row class ="sub-title"> Full Stack Software Engineer </v-row>
-            <v-row class="text" style="margin-top: 18px;"> Innovative and strategic thinker, with a Computer Science foundation and experience bringing software products to launch. Blending technical insight with a keen eye for business and design, I excel in bringing clarity, direction, and alignment, passionately driving teams towards unified objectives. </v-row>
+            <v-row class="text"> Innovative and strategic thinker, with a Computer Science foundation and experience bringing software products to launch. Blending technical insight with a keen eye for business and design, I excel in bringing clarity, direction, and alignment, passionately driving teams towards unified objectives. </v-row>
 
-            <v-row style="padding-top: 18px;">
+            <v-row style="padding-top: 32px;">
                 <!-- left slide -->
                 <v-col :cols="mdAndUp ? 5 : 12">
                     <v-row class="header">Contact</v-row>
                     <v-row> <a class="text" style="padding-top: 2px">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
                     <v-row> <a class="text" href="mailto:jcarunner@gmail.com"> &#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; </a> </v-row>
-                    <v-row> <a class="text" href="https://github.com/jackammon"> github.com/jackammon </a> </v-row>
-                    <v-row> <a class="text" href="http://www.linkedin.com/in/jackammon"> linkedin.com/in/jackammon </a> </v-row>
+                    <v-row> <a class="text" href="https://github.com/jackammon"> github.com/jackammon </a></v-row>
+                    <v-row> <a class="text" href="http://www.linkedin.com/in/jackammon"> linkedin.com/in/jackammon </a></v-row>
 
-                    <v-row class="header" style="padding-top: 16px;"> Skills </v-row>
+                    <v-row class="header" style="padding-top: 32px;"> Skills </v-row>
                     <v-row class="sub-header" style="padding-top: 2px"> Hard </v-row>
                         
-                    <v-row class="text"> - Frontend: TypeScript, Vue.JS, Angular </v-row>     
-                    <v-row class="text"> - Backend: NET, Node.js, Laravel </v-row>
-                    <v-row class="text"> - Git, Docker, Unix </v-row>
-                    <v-row class="text"> - OO programming </v-row>
+                    <v-row class="text indent"> - Frontend: TypeScript, Vue.JS, Angular </v-row>     
+                    <v-row class="text indent"> - Backend: NET, Node.js, Laravel </v-row>
+                    <v-row class="text indent"> - Git, Docker, Unix </v-row>
+                    <v-row class="text indent" style="padding-bottom: 2px;"> - OO programming </v-row>
                     
                     <v-row class="sub-header" style="padding-top: 8px;"> Soft </v-row>
-                    <v-row class="text"> - Writing and Speaking </v-row>
-                    <v-row class="text"> - Team-Building </v-row>
-                    <v-row class="text"> - Coordinating and delegating tasks </v-row>
-                    <v-row class="text"> - Decision making </v-row>
+                    <v-row class="text indent"> - Writing and Speaking </v-row>
+                    <v-row class="text indent"> - Team-Building </v-row>
+                    <v-row class="text indent"> - Coordinating and delegating tasks </v-row>
+                    <v-row class="text indent"> - Decision making </v-row>
 
-                    <v-row class="header" style="padding-top: 16px;"> Education </v-row>
+                    <v-row class="header" style="padding-top: 32px;"> Education </v-row>
                     <v-row class="sub-header" style="padding-top: 2px"> B.S. Computer Science </v-row>
                     <v-row class="text2"> @ George Fox University, 2021 </v-row>
 
-                    <v-row class="p-title" style="padding-top: 16px;"> Relevant Courses </v-row>
-                    <v-row class="i-text"> - Data Structures </v-row>
-                    <v-row class="i-text"> - Object Oriented Design & Analysis </v-row>
-                    <v-row class="i-text"> - Design & Analysis of Algorithms </v-row>
-                    <v-row class="i-text"> - Web Based Programming </v-row>
-                    <v-row class="i-text"> - Client-Server Systems </v-row>
-                    <v-row class="i-text"> - Database Systems </v-row>
-                    <v-row class="i-text"> - Human Computer Interactions </v-row>
-                    <v-row class="i-text"> - Operating Systems </v-row>
-                    <v-row class="i-text"> - Computer Security & Digital Forensics </v-row>
+                    <v-row class="p-title" style="padding-top: 18px;"> Relevant Courses </v-row>
+                    <v-row class="i-text indent"> - Data Structures </v-row>
+                    <v-row class="i-text indent"> - Object Oriented Design & Analysis </v-row>
+                    <v-row class="i-text indent"> - Design & Analysis of Algorithms </v-row>
+                    <v-row class="i-text indent"> - Web Based Programming </v-row>
+                    <v-row class="i-text indent"> - Client-Server Systems </v-row>
+                    <v-row class="i-text indent"> - Database Systems </v-row>
+                    <v-row class="i-text indent"> - Human Computer Interactions </v-row>
+                    <v-row class="i-text indent"> - Operating Systems </v-row>
+                    <v-row class="i-text indent"> - Design & Analysis of Programming Languages </v-row>
+                    <v-row class="i-text indent"> - Computer Security & Digital Forensics </v-row>
                 </v-col>
 
                 <!-- right side -->
@@ -52,7 +53,7 @@
                     <v-row class="text3"> June 2022 - March 2024 @ Buildable</v-row>
 
                     <v-row style="margin-top: 0px;">
-                        <b style="width: 100%;">30% - Management</b>
+                        <b style="width: 100%; margin-top: 4px;">30% - Management</b>
                         <ul>
                             <li>Led a team of 5 direct report engineers working on multiple projects.</li>
                             <li>Made resource allocation decisions for weekly company production.</li>
@@ -150,16 +151,20 @@
 
     .title {
         font-weight: 800 !important;
-        font-size: 32pt !important;
+        font-size: 42pt !important;
         line-height: 1em;
         letter-spacing: -.02em;
+        padding-bottom: 8px !important;
     }
 
     .sub-title {
-        text-align: left;
-        font-weight: 800 !important;
-        font-size: 20pt !important;
-        letter-spacing: -.02em;
+        font-style: normal;
+        font-size: 14pt;
+        line-height: 110%;
+        letter-spacing: .02em;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-bottom: 18px;
     }
 
     .text {
@@ -179,10 +184,13 @@
     }
     
     .header {
-        font-size: 16pt !important;
-        font-weight: 800 !important;
+        line-height: 110%;
+        letter-spacing: -.02em !important;
+        text-transform: uppercase;
+        font-weight: 600 !important;
+        font-size: 12pt;
         text-decoration-line: underline;
-        letter-spacing: -.02em;
+        padding-bottom: 8px !important;
     }
 
     .sub-header {
@@ -218,26 +226,36 @@
         margin-left: 24px;
     }
 
+    .indent {
+        margin-left: 4px;
+    }
+
     .mobile-spacing {
-        padding-top: 16px;
+        padding-top: 32px;
     }
 
     @media (max-width: 960px) {
         .title {
-        font-size: 24pt !important;
+        font-size: 32pt !important;
         }
 
         .sub-title {
-        font-size: 16pt !important;
-        }
+            font-style: normal;
+            font-size: 12pt;
+            line-height: 110%;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding-bottom: 18px;
+            }
 
-        .header {
+        /* .header {
         font-size: 18pt !important;
         }
 
         .sub-header {
         font-size: 16pt !important;
-        }
+        } */
 
         li {
         font-size: 10pt !important;
