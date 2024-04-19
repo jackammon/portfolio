@@ -18,7 +18,7 @@
         <v-spacer style="width: 80%"></v-spacer>
       </v-tabs>
 
-      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'" style="left: 2px;">
+      <v-btn icon variant="plain" class="hidden-md-and-up" @click="drawer = !drawer" :color="!drawer ? 'black' : '#fffdf9'" style="left: 4px;">
         <v-icon>{{drawer ? 'mdi-close' : 'mdi-menu'}}</v-icon>
       </v-btn>
 
@@ -76,20 +76,12 @@ import NavDrawer from './components/NavDrawer.vue';
 
 const drawer = ref(false);
 
-const menuItems = [
-  { title: 'Home', link: '/' },
-  { title: 'About', link: '/about' },
-  { title: 'Contact', link: '/contact' },
-  { title: 'Resume', link: '/resume' }
-];
-
 onMounted(() => {
   console.log("Hi there 👋");
   console.log("I built this website using Vue3, Vuetify, Vite, and GSAP");
   console.log("If you'd like to get in contact with me, my information is found under the contact page");
   console.log("Thanks for stopping by!");
 });
-
 </script>
 
 <style lang="scss">
@@ -99,7 +91,7 @@ onMounted(() => {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000;
-  // background-color: #fffdf9 !important;
+  background-color: #fffdf9 !important;
 }
 
 .btn-size {
