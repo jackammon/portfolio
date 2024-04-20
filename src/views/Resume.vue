@@ -18,7 +18,7 @@
                     <v-row class="sub-header" style="padding-top: 2px"> Hard </v-row>
                         
                     <v-row class="text indent"> - Frontend: TypeScript, Vue.JS, Angular </v-row>     
-                    <v-row class="text indent"> - Backend: NET, Node.js, Laravel </v-row>
+                    <v-row class="text indent"> - Backend: .NET, Node.js, Laravel </v-row>
                     <v-row class="text indent"> - Git, Docker, Unix </v-row>
                     <v-row class="text indent" style="padding-bottom: 2px;"> - OO programming </v-row>
                     

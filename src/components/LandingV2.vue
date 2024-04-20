@@ -21,7 +21,7 @@ export default {
       "Welcome to my slice of the internet",
       "I build things designed to last",
       "I build things that help people",
-      "I build cool things",
+      "I build things",
       "jck.codes",
     ];
     let currentText = 0;
