@@ -10,7 +10,7 @@
                 <v-col :cols="mdAndUp ? 5 : 12">
                     <v-row class="header">Contact</v-row>
                     <v-row> <a class="text" style="padding-top: 2px">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
-                    <v-row> <a class="text" href="mailto:jcarunner@gmail.com"> &#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; </a> </v-row>
+                    <v-row> <a class="text" href="mailto:hello@jck.codes"> &#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6a;&#x63;&#x6b;&#x2e;&#x63;&#x6f;&#x64;&#x65;&#x73;</a> </v-row>
                     <v-row> <a class="text" href="https://github.com/jackammon"> github.com/jackammon </a></v-row>
                     <v-row> <a class="text" href="http://www.linkedin.com/in/jackammon"> linkedin.com/in/jackammon </a></v-row>
 

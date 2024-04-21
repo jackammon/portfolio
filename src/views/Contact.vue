@@ -5,7 +5,7 @@
         <div class="effect">
           <div class="contact">
               <div>You can reach me at </div>
-              <div>&#x6a;&#x63;&#x61;&#x72;&#x75;&#x6e;&#x6e;&#x65;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</div>
+              <div>&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6a;&#x63;&#x6b;&#x2e;&#x63;&#x6f;&#x64;&#x65;&#x73;</div>
               <div>&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</div>
           </div>
         </div>
