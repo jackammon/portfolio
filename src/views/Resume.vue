@@ -3,7 +3,7 @@
       <v-container class="p-fix"> 
             <v-row class="title"> Jack Ammon </v-row>
             <v-row class ="sub-title"> Full Stack Software Engineer </v-row>
-            <v-row class="text"> Innovative and strategic thinker, with a Computer Science foundation and experience bringing software products to launch. Blending technical insight with a keen eye for business and design, I excel in bringing clarity, direction, and alignment, passionately driving teams towards unified objectives. </v-row>
+            <v-row class="text"> Strategic and forward-thinking software engineer, with a Computer Science foundation and experience bringing software products to launch. I blend technical expertise with an eye for business and design, excelling in providing clarity and direction. I lead by example, building excellent products, and am a skilled communicator who knows how to translate technical ideas into language that is understandable and approachable.</v-row>
 
             <v-row style="padding-top: 32px;">
                 <!-- left slide -->
