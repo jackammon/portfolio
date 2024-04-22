@@ -9,8 +9,7 @@
                 <!-- left slide -->
                 <v-col :cols="mdAndUp ? 5 : 12">
                     <v-row class="header">Contact</v-row>
-                    <v-row> <a class="text" style="padding-top: 2px">&#x35;&#x30;&#x39;&#x2e;&#x38;&#x30;&#x38;&#x2e;&#x31;&#x32;&#x31;&#x39;</a></v-row>
-                    <v-row> <a class="text" href="mailto:hello@jck.codes"> &#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6a;&#x63;&#x6b;&#x2e;&#x63;&#x6f;&#x64;&#x65;&#x73;</a> </v-row>
+                    <v-row> <a class="text" style="padding-top: 2px" href="mailto:hello@jck.codes"> &#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6a;&#x63;&#x6b;&#x2e;&#x63;&#x6f;&#x64;&#x65;&#x73;</a> </v-row>
                     <v-row> <a class="text" href="https://github.com/jackammon"> github.com/jackammon </a></v-row>
                     <v-row> <a class="text" href="http://www.linkedin.com/in/jackammon"> linkedin.com/in/jackammon </a></v-row>
 
