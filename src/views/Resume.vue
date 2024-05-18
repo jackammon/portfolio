@@ -47,6 +47,16 @@
                 <!-- right side -->
                 <v-col :cols="mdAndUp ? 7 : 12">
                     <v-row class="header" :class="{'mobile-spacing': !mdAndUp}"> Experience </v-row>
+                    <v-row class="sub-header"> Software Engineer </v-row>
+                    <v-row class="text3">May 2024 - Current @ Webconnex</v-row>
+                    <v-row style="margin-bottom: 16px">
+                        <ul>
+                            <li>Currently on the payments team working on their core platform maintaining and improving their products.</li>
+                            <!-- <li>Wrote performant front-end components in React.</li>
+                            <li>Wrote performant Go backends.</li> -->
+                        </ul>
+                    </v-row>
+
                     <v-row class="sub-header" v-if="smAndUp"> Software Engineering Manager </v-row>
                     <v-row class="sub-header" v-if="!smAndUp"> Software Engineering</v-row>
                     <v-row class="sub-header" v-if="!smAndUp"><div style="margin-top: -4px;"> Manager</div></v-row>
