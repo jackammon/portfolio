@@ -9,7 +9,7 @@
           <h1 class="text-left">Jack Ammon</h1> 
           <h2 class="text-left mb-10">Product Focused Software Engineer</h2>
 
-          <p class="text-left mb-7">With over five years of experience, I specialize in building and maintaining software products. After earning a B.S. in Computer Science from George Fox University, I joined a small custom software firm where I contributed to the development of more than half a dozen software products. Working at a smaller company offered me the opportunity to wear multiple hats and make significant contributions to our projects. I worked directly with clients translating their ideas to reality.</p>
+          <p class="text-left mb-7">With over {{experienceYearsInWords}} years of experience, I specialize in building and maintaining software products. After earning a B.S. in Computer Science from George Fox University, I joined a small custom software firm where I contributed to the development of more than half a dozen software products. Working at a smaller company offered me the opportunity to wear multiple hats and make significant contributions to our projects. I worked directly with clients translating their ideas to reality. I then joined Webconnex, where I am currently on the payments team working on their core platform maintaining and improving their products.</p>
 
           <p class="text-left mb-7">I have experience writing code across various tech stacks, developing custom tools, integrating third-party services, and setting up CI/CD pipelines. Additionally, I have managed infrastructure on AWS and Azure, and configured servers for both development and production environments.</p>
 
@@ -21,15 +21,35 @@
 </template>
 
 <script>
-  import { useDisplay } from 'vuetify'
+import { useDisplay } from 'vuetify'
 
-    export default {
-    setup () {
-        const { mdAndUp } = useDisplay()
+function numberToWords(num) {
+  const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+  return words[num] || num.toString();
+}
 
-        return { mdAndUp }
-    }
+function calculateExperienceYears(startDate) {
+  const start = new Date(startDate);
+  const now = new Date();
+  const diff = now.getFullYear() - start.getFullYear();
+  const m = now.getMonth() - start.getMonth();
+  if (m < 0 || (m === 0 && now.getDate() < start.getDate())) {
+    return diff - 1;
   }
+  return diff;
+}
+
+export default {
+  setup () {
+    const { mdAndUp } = useDisplay();
+    
+    const startDate = new Date('2019-04-01');
+    const experienceYears = calculateExperienceYears(startDate);
+    const experienceYearsInWords = numberToWords(experienceYears);
+
+    return { mdAndUp, experienceYearsInWords };
+  }
+}
 </script>
 
 <style scoped>
