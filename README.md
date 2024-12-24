@@ -28,6 +28,7 @@ To build and run the project, you need to have Node.js and pnpm installed. Then,
 ```sh
 pnpm install
 pnpm build
+```
 
 ## Deployment
 The portfolio is automatically deployed to GitHub Pages whenever changes are pushed to the master branch, thanks to the GitHub Actions workflow defined in .github/workflows/deploy-to-gh-pages.yml.  
