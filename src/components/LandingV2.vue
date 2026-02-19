@@ -17,7 +17,6 @@ export default {
   setup() {
     const textElement = ref(null);
     const texts = [
-      "Hello,<br>I'm Jack Ammon",
       "Welcome to my slice of the internet",
       "I build things designed to last",
       "I build things that help people",

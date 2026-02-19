@@ -9,7 +9,10 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
-import VueGtag from "vue-gtag";
+import VueGtag from "vue-gtag"
+
+// Prism CSS for code highlighting
+import 'prismjs/themes/prism.css'
 
 const app = createApp(App)
 

@@ -3,6 +3,8 @@ import Components from 'unplugin-vue-components/vite'
 import Vue from '@vitejs/plugin-vue'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import ViteFonts from 'unplugin-fonts/vite'
+import Markdown from 'vite-plugin-vue-markdown'
+import mdPrism from 'markdown-it-prism'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -13,7 +15,15 @@ export default defineConfig({
   base: '/',
   plugins: [
     Vue({
+      include: [/\.vue$/, /\.md$/],
       template: { transformAssetUrls }
+    }),
+    Markdown({
+      headEnabled: false,
+      markdownItSetup(md) {
+        md.use(mdPrism)
+      },
+      frontmatter: true
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     Vuetify(),
@@ -45,6 +55,7 @@ export default defineConfig({
       '.ts',
       '.tsx',
       '.vue',
+      '.md',
     ],
   },
   server: {

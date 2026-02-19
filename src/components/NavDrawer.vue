@@ -23,7 +23,9 @@ const props = defineProps({
 const menuItems = [
   { title: 'About', link: '/about' },
   { title: 'Contact', link: '/contact' },
-  { title: 'Resume', link: '/resume' }
+  { title: 'Resume', link: '/resume' },
+  { title: 'Projects', link: '/projects' },
+  { title: 'Entries', link: '/entries' },
 ];
 
 function toLink(link) {

@@ -6,6 +6,9 @@ import Resume from './views/Resume.vue'
 import Projects from './views/Projects.vue'
 import Contact from './views/Contact.vue'
 import About from './views/About.vue'
+import EntriesIndex from './views/EntriesIndex.vue'
+import BlogPost from './views/BlogPost.vue'
+import ProjectDetail from './views/ProjectDetail.vue'
 
 const routes = [
   {
@@ -22,6 +25,21 @@ const routes = [
     path: '/projects',
     name: 'projects',
     component: Projects
+  },
+  {
+    path: '/projects/:slug',
+    name: 'project-detail',
+    component: ProjectDetail
+  },
+  {
+    path: '/entries',
+    name: 'entries',
+    component: EntriesIndex
+  },
+  {
+    path: '/blog/:slug',
+    name: 'blog-post',
+    component: BlogPost
   },
   {
     path: '/contact',
