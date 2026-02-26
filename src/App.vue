@@ -39,7 +39,7 @@
 
     <!-- floating nav footer -->
     <div v-if="drawer" class="floating-footer">
-      jck.codes 
+      {{ hostname }}
     </div>
 
     <v-main class="pa-0 fill-height">
@@ -75,6 +75,7 @@ import { ref, onMounted } from 'vue';
 import NavDrawer from './components/NavDrawer.vue';
 
 const drawer = ref(false);
+const hostname = window.location.hostname;
 
 onMounted(() => {
   console.log("Hi there 👋");

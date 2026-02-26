@@ -16,13 +16,14 @@ import { TextPlugin } from 'gsap/TextPlugin';
 export default {
   setup() {
     const textElement = ref(null);
+    const hostname = window.location.hostname;
     const texts = [
       "Hello,<br>I'm Jack Ammon",
       "Welcome to my slice of the internet",
       "I build things designed to last",
       "I build things that help people",
       "I build cool things",
-      "jck.codes",
+      hostname,
     ];
     let currentText = 0;
 
